@@ -56,7 +56,7 @@ public class ClientApplication extends ClientApplet {
    * Method called by Java Web Start to init the application.
    */
   public static void main(String[] argv) {
-    System.setProperty("SERVERURL","http://localhost:8080/controller");
+    System.setProperty("SERVERURL","http://localhost:8080/erp/controller");
     SwingUtilities.invokeLater(new Runnable() {
       public void run() {
         new ClientApplication();
