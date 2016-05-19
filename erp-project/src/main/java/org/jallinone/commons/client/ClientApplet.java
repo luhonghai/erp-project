@@ -21,7 +21,6 @@ import org.openswing.swing.permissions.client.*;
 import org.openswing.swing.permissions.java.*;
 import org.openswing.swing.table.profiles.client.*;
 import org.openswing.swing.util.client.*;
-import netscape.javascript.*;
 //import org.openswing.swing.util.client.HessianObjectSender;
 
 
@@ -546,8 +545,7 @@ public class ClientApplet extends ClientUtils implements MDIController,LoginCont
     if (calledAsApplet) {
       destroy();
       try {
-        JSObject js = JSObject.getWindow(this);
-        js.call("closeFrame", new Object[] {});
+
       }
       catch (Throwable ex) {
       }
