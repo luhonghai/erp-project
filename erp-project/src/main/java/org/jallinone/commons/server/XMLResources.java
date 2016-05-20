@@ -49,13 +49,13 @@ public class XMLResources extends ServerResourcesFactory {
    */
   public void init(ServletContext context) {
     Hashtable xmlFiles = new Hashtable();
-    xmlFiles.put("EN",this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"Resources_en.xml");
-    xmlFiles.put("IT",this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"Resources_it.xml");
-    xmlFiles.put("ES",this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"Resources_es.xml");
-		xmlFiles.put("PTBR",this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"Resources_PTBR.xml");
-		xmlFiles.put("DE",this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"Resources_de.xml");
-		xmlFiles.put("HR",this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"Resources_hr.xml");
-		xmlFiles.put("RU",this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"Resources_ru.xml");
+    xmlFiles.put("EN",org.openswing.swing.util.server.FileHelper.getRootResource()+"Resources_en.xml");
+    xmlFiles.put("IT",org.openswing.swing.util.server.FileHelper.getRootResource()+"Resources_it.xml");
+    xmlFiles.put("ES",org.openswing.swing.util.server.FileHelper.getRootResource()+"Resources_es.xml");
+		xmlFiles.put("PTBR",org.openswing.swing.util.server.FileHelper.getRootResource()+"Resources_PTBR.xml");
+		xmlFiles.put("DE",org.openswing.swing.util.server.FileHelper.getRootResource()+"Resources_de.xml");
+		xmlFiles.put("HR",org.openswing.swing.util.server.FileHelper.getRootResource()+"Resources_hr.xml");
+		xmlFiles.put("RU",org.openswing.swing.util.server.FileHelper.getRootResource()+"Resources_ru.xml");
     factory = new XMLResourcesFactory(xmlFiles,false);
   }
 

@@ -157,7 +157,7 @@ public class UpdateItemBean  implements UpdateItem {
           appPath += "/";
         if (!new File(appPath).isAbsolute()) {
           // relative path (to "WEB-INF/classes/" folder)
-          appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+          appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
         }
         new File(appPath+oldVO.getSmallImageITM01()).delete();
       }
@@ -169,7 +169,7 @@ public class UpdateItemBean  implements UpdateItem {
 					appPath += "/";
 				if (!new File(appPath).isAbsolute()) {
 					// relative path (to "WEB-INF/classes/" folder)
-					appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+					appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 				}
 				new File(appPath).mkdirs();
 
@@ -198,7 +198,7 @@ public class UpdateItemBean  implements UpdateItem {
           appPath += "/";
         if (!new File(appPath).isAbsolute()) {
           // relative path (to "WEB-INF/classes/" folder)
-          appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+          appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
         }
         new File(appPath+oldVO.getLargeImageITM01()).delete();
       }
@@ -210,7 +210,7 @@ public class UpdateItemBean  implements UpdateItem {
 					appPath += "/";
 				if (!new File(appPath).isAbsolute()) {
 					// relative path (to "WEB-INF/classes/" folder)
-					appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+					appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 				}
 				new File(appPath).mkdirs();
 

@@ -202,7 +202,7 @@ public class InsertItemBean  implements InsertItem {
           appPath += "/";
         if (!new File(appPath).isAbsolute()) {
           // relative path (to "WEB-INF/classes/" folder)
-          appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+          appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
         }
 
 				BigDecimal imageProgressive = CompanyProgressiveUtils.getInternalProgressive(vo.getCompanyCodeSys01(),"ITM01_ITEMS","SMALL_IMG",conn);
@@ -225,7 +225,7 @@ public class InsertItemBean  implements InsertItem {
           appPath += "/";
         if (!new File(appPath).isAbsolute()) {
           // relative path (to "WEB-INF/classes/" folder)
-          appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+          appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
         }
 
 				BigDecimal imageProgressive = CompanyProgressiveUtils.getInternalProgressive(vo.getCompanyCodeSys01(),"ITM01_ITEMS","LARGE_IMG",conn);

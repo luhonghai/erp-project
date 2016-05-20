@@ -67,7 +67,7 @@ public class LoadReportFileNamesAction implements Action {
   public final Response executeCommand(Object inputPar,UserSessionParameters userSessionPars,HttpServletRequest request, HttpServletResponse response,HttpSession userSession,ServletContext context) {
     try {
       ArrayList list = new ArrayList();
-      String path = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"reports/";
+      String path = org.openswing.swing.util.server.FileHelper.getRootResource()+"reports/";
       File[] files = new File(path).listFiles(new FileFilter() {
         public boolean accept(File pathname) {
           return pathname.getName().endsWith(".jasper");

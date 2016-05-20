@@ -132,7 +132,7 @@ public class ItemSheetsBean implements ItemSheets {
 					appPath += "/";
 				if (!new File(appPath).isAbsolute()) {
 					// relative path (to "WEB-INF/classes/" folder)
-					appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+					appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 				}
 				File f = new File(appPath+vo.getImageNameITM25());
 				byte[] bytes = new byte[(int)f.length()];
@@ -539,7 +539,7 @@ public class ItemSheetsBean implements ItemSheets {
 					appPath += "/";
 				if (!new File(appPath).isAbsolute()) {
 					// relative path (to "WEB-INF/classes/" folder)
-					appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+					appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 				}
 
 				BigDecimal imageProgressive = CompanyProgressiveUtils.getInternalProgressive(vo.getCompanyCodeSys01ITM25(),"ITM25_ITEM_SHEETS","IMG",conn);
@@ -695,7 +695,7 @@ public class ItemSheetsBean implements ItemSheets {
 						 appPath += "/";
 					 if (!new File(appPath).isAbsolute()) {
 						 // relative path (to "WEB-INF/classes/" folder)
-						 appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+						 appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 					 }
 					 new File(appPath+oldVO.getImageITM25()).delete();
 				}
@@ -707,7 +707,7 @@ public class ItemSheetsBean implements ItemSheets {
 						 appPath += "/";
 					 if (!new File(appPath).isAbsolute()) {
 						 // relative path (to "WEB-INF/classes/" folder)
-						 appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+						 appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 					 }
 					 new File(appPath).mkdirs();
 

@@ -345,7 +345,7 @@ public class LoadItemBean implements LoadItem {
             appPath += "/";
           if (!new File(appPath).isAbsolute()) {
             // relative path (to "WEB-INF/classes/" folder)
-            appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+            appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
           }
           File f = new File(appPath+vo.getSmallImageITM01());
           byte[] bytes = new byte[(int)f.length()];
@@ -363,7 +363,7 @@ public class LoadItemBean implements LoadItem {
             appPath += "/";
           if (!new File(appPath).isAbsolute()) {
             // relative path (to "WEB-INF/classes/" folder)
-            appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+            appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
           }
           File f = new File(appPath+vo.getLargeImageITM01());
           byte[] bytes = new byte[(int)f.length()];

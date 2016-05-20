@@ -1194,7 +1194,7 @@ public class DocumentsBean  implements Documents {
 				appPath += "/";
 			if (!new File(appPath).isAbsolute()) {
 				// relative path (to "WEB-INF/classes/" folder)
-				appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+				appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 			}
 			String relativePath = FileUtils.getFilePath(appPath,"DOC14",vo.getCreateDateDOC15());
 			File file = new File(appPath+"DOC"+vo.getProgressiveDoc14DOC15()+"_"+vo.getVersionDOC15()); // retro-compatibility...
@@ -1273,7 +1273,7 @@ public class DocumentsBean  implements Documents {
 					appPath += "/";
 				if (!new File(appPath).isAbsolute()) {
 					// relative path (to "WEB-INF/classes/" folder)
-					appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+					appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 				}
 				file = new File(appPath+"DOC"+vo.getProgressiveDoc14DOC15()+"_"+vo.getVersionDOC15());
 				file.delete();

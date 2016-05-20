@@ -230,7 +230,7 @@ public class InsertDocumentLinkBean implements InsertDocumentLink {
 				appPath += "/";
 			if (!new File(appPath).isAbsolute()) {
 				// relative path (to "WEB-INF/classes/" folder)
-				appPath = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+appPath;
+				appPath = org.openswing.swing.util.server.FileHelper.getRootResource()+appPath;
 			}
 			String relativePath = FileUtils.getFilePath(appPath,"DOC14");
 			new File(appPath+relativePath).mkdirs();

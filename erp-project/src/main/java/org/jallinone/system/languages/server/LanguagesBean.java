@@ -188,7 +188,7 @@ public class LanguagesBean  implements Languages {
           catch (Exception ex5) {
           }
           if (in==null)
-            in = new FileInputStream(this.getClass().getResource("/").getPath().replaceAll("%20"," ") + fileName);
+            in = new FileInputStream(org.openswing.swing.util.server.FileHelper.getRootResource() + fileName);
 
           br = new BufferedReader(new InputStreamReader(in));
           String line = null;

@@ -146,7 +146,7 @@ public class UpgradeBean {
     DbConnVO vo = new DbConnVO();
     try {
       Properties props = new Properties();
-      FileInputStream in = new FileInputStream(this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"pooler.ini");
+      FileInputStream in = new FileInputStream(org.openswing.swing.util.server.FileHelper.getRootResource()+"pooler.ini");
       props.load(in);
       vo.setDriverName(props.getProperty("driverClass"));
       vo.setUsername(props.getProperty("user"));

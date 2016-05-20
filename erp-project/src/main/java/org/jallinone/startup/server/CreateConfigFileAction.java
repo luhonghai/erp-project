@@ -211,7 +211,7 @@ public class CreateConfigFileAction implements Action {
       props.setProperty("user", user);
       props.setProperty("password", password);
       props.setProperty("url", url);
-      FileOutputStream out = new FileOutputStream(this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"pooler.ini");
+      FileOutputStream out = new FileOutputStream(org.openswing.swing.util.server.FileHelper.getRootResource()+"pooler.ini");
       props.store(out,"POOLER PROPERTIES");
       try {
         out.close();
@@ -220,7 +220,7 @@ public class CreateConfigFileAction implements Action {
       }
 
       // update also "conf/applicationContext.xml" file...
-      String xmlFile = this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"conf/applicationContext.xml";
+      String xmlFile = org.openswing.swing.util.server.FileHelper.getRootResource()+"conf/applicationContext.xml";
       BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(xmlFile))));
       StringBuffer sb = new StringBuffer();
       String line = null;
@@ -292,7 +292,7 @@ public class CreateConfigFileAction implements Action {
           "removeConfigIni",
           "Removing connection pooler .ini file"
       );
-      File f = new File(this.getClass().getResource("/").getPath().replaceAll("%20"," ")+"pooler.ini");
+      File f = new File(org.openswing.swing.util.server.FileHelper.getRootResource()+"pooler.ini");
       boolean ok = f.delete();
       Logger.debug(
           "NONAME",

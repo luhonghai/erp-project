@@ -145,7 +145,7 @@ public class JasperReportAction implements Action {
         new ErrorResponse(t1);
       }
 
-      String path = this.getClass().getResource("/").getPath().replaceAll("%20"," ");
+      String path = org.openswing.swing.util.server.FileHelper.getRootResource();
       String reportName = path+"reports/"+baseName.substring(0,baseName.lastIndexOf("."));
 
       File file = new File(reportName+".jasper");

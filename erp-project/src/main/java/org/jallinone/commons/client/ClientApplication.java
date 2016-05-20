@@ -1,24 +1,11 @@
 package org.jallinone.commons.client;
 
-import java.util.*;
-import org.openswing.swing.mdi.client.*;
-import org.openswing.swing.util.client.ClientSettings;
-import org.openswing.swing.internationalization.java.EnglishOnlyResourceFactory;
-import org.openswing.swing.util.client.*;
-import org.openswing.swing.permissions.client.*;
-import java.awt.Image;
+
+import com.luhonghai.jetty.JettyRunner;
+import org.eclipse.jetty.util.component.AbstractLifeCycle;
+import org.eclipse.jetty.util.component.LifeCycle;
+
 import javax.swing.*;
-import org.openswing.swing.internationalization.java.Language;
-import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.DefaultMutableTreeNode;
-import org.openswing.swing.mdi.java.ApplicationFunction;
-import org.openswing.swing.internationalization.java.XMLResourcesFactory;
-import org.openswing.swing.domains.java.Domain;
-import org.openswing.swing.internationalization.java.*;
-import org.openswing.swing.message.receive.java.*;
-import org.openswing.swing.permissions.java.ButtonsAuthorizations;
-import org.openswing.swing.message.receive.java.UserAuthorizationsResponse;
-import netscape.javascript.JSObject;
 
 
 /**
@@ -50,18 +37,53 @@ import netscape.javascript.JSObject;
  * @version 1.0
  */
 public class ClientApplication extends ClientApplet {
-
-
   /**
    * Method called by Java Web Start to init the application.
    */
   public static void main(String[] argv) {
-    System.setProperty("SERVERURL","http://localhost:8080/erp/controller");
-    SwingUtilities.invokeLater(new Runnable() {
-      public void run() {
-        new ClientApplication();
-      }
-    });
+    int port = 9999;
+    if (argv != null && argv.length > 0) {
+      port = Integer.parseInt(argv[0]);
+    }
+    final JettyRunner jettyRunner = new JettyRunner(port);
+    try {
+      jettyRunner.start(new AbstractLifeCycle.AbstractLifeCycleListener() {
+        @Override
+        public void lifeCycleFailure(LifeCycle event, Throwable cause) {
+          super.lifeCycleFailure(event, cause);
+        }
+
+        @Override
+        public void lifeCycleStarted(LifeCycle event) {
+          String controller = jettyRunner.getBaseURL() + "/controller";
+          System.out.print("Base URL " + controller);
+          System.setProperty("SERVERURL", controller);
+          SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+              new ClientApplication();
+            }
+          });
+        }
+
+        @Override
+        public void lifeCycleStarting(LifeCycle event) {
+          super.lifeCycleStarting(event);
+        }
+
+        @Override
+        public void lifeCycleStopped(LifeCycle event) {
+          super.lifeCycleStopped(event);
+        }
+
+        @Override
+        public void lifeCycleStopping(LifeCycle event) {
+          super.lifeCycleStopping(event);
+        }
+      });
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
   }
 
 
