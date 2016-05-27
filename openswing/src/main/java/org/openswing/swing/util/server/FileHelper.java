@@ -14,8 +14,12 @@ import java.security.ProtectionDomain;
  */
 public class FileHelper {
 
+    public static Class BASE_CLASS = FileHelper.class;
+
+    public static int APP_VERSION = 1;
+
     public static File getTmpWar() {
-        File erpDir =  new File(FileUtils.getTempDirectory(), "erp");
+        File erpDir =  new File(FileUtils.getTempDirectory(), "erp" + APP_VERSION);
         if (!erpDir.exists()) {
             erpDir.mkdirs();
         }
@@ -41,7 +45,7 @@ public class FileHelper {
 
     public static URI getWebRootResourceUri() throws FileNotFoundException, URISyntaxException
     {
-        ProtectionDomain domain = FileHelper.class.getProtectionDomain();
+        ProtectionDomain domain = BASE_CLASS.getProtectionDomain();
         URL location = domain.getCodeSource().getLocation();
         String path = location.toURI().toASCIIString();
         if (path.startsWith("jar:") && path.contains("!")) {

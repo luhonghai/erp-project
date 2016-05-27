@@ -9,9 +9,12 @@ import org.jallinone.startup.java.DbConnVO;
 import org.openswing.swing.permissions.client.LoginDialog;
 import org.jallinone.commons.client.ClientApplet;
 import org.openswing.swing.util.client.ClientSettings;
+
+import java.io.File;
 import java.math.BigDecimal;
 import org.openswing.swing.client.*;
 import org.openswing.swing.message.receive.java.VOResponse;
+import org.openswing.swing.util.server.FileHelper;
 
 
 /**
@@ -180,6 +183,7 @@ public class StartupFrame extends JFrame {
       dbTypeComboBox.addItem("MS SqlServer (older JDBC driver)");
 			dbTypeComboBox.addItem("MS SqlServer (newer JDBC driver)");
       dbTypeComboBox.addItem("My SQL");
+      dbTypeComboBox.addItem("SQLite");
       dbTypeComboBox.addItem("Other Database");
       dbTypeComboBox.setSelectedIndex(0);
 
@@ -725,6 +729,13 @@ public class StartupFrame extends JFrame {
       dbConnVO.setUrl(jdbcUrl);
     }
     else if (dbTypeComboBox.getSelectedIndex()==4) {
+      // SQLite database
+      dbConnVO.setDriverName("org.sqlite.JDBC");
+      dbConnVO.setUrl("jdbc:sqlite:" + new File(FileHelper.getRootResource(), "erp.sqlite").getAbsolutePath());
+      dbConnVO.setUsername("");
+      dbConnVO.setPassword("");
+    }
+    else if (dbTypeComboBox.getSelectedIndex()==5) {
       // other database...
       dbConnVO.setDriverName(driverTF.getText().trim());
       dbConnVO.setPassword(otherPasswdTF.getText().trim());

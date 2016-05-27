@@ -4,6 +4,7 @@ package org.jallinone.commons.client;
 import com.luhonghai.jetty.JettyRunner;
 import org.eclipse.jetty.util.component.AbstractLifeCycle;
 import org.eclipse.jetty.util.component.LifeCycle;
+import org.openswing.swing.util.server.FileHelper;
 
 import javax.swing.*;
 
@@ -41,6 +42,7 @@ public class ClientApplication extends ClientApplet {
    * Method called by Java Web Start to init the application.
    */
   public static void main(String[] argv) {
+    FileHelper.BASE_CLASS = ClientApplication.class;
     int port = 9999;
     if (argv != null && argv.length > 0) {
       port = Integer.parseInt(argv[0]);
