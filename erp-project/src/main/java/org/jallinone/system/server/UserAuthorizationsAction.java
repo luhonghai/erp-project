@@ -424,7 +424,7 @@ public class UserAuthorizationsAction implements Action {
 	          "from HIE01_LEVELS,SYS10_TRANSLATIONS "+
 	          "where HIE01_LEVELS.PROGRESSIVE = SYS10_TRANSLATIONS.PROGRESSIVE and "+
 	          "SYS10_TRANSLATIONS.LANGUAGE_CODE='"+langId+"' and ENABLED='Y' and PROGRESSIVE_HIE02=2 "+
-	          "order by LEV,PROGRESSIVE_HIE01,PROGRESSIVE"
+	          "order by LEV,PROGRESSIVE_HIE01,SYS10_TRANSLATIONS.PROGRESSIVE"
 	      );
 	      rset = pstmt.executeQuery();
 	      Hashtable currentLevelNodes = new Hashtable();

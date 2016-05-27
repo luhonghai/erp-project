@@ -174,6 +174,7 @@ public class CreateConfigFileAction implements Action {
 		  }
 		  catch (Throwable ex) {
 			  Logger.error("NONAME",this.getClass().getName(),"executeCommand","Error while creating database structures",ex);
+			  ex.printStackTrace();
 			  throw new Exception("Error while creating database structures:\n"+ex.getMessage());
 		  }
 		  finally {

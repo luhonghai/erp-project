@@ -1,22 +1,15 @@
 package org.jallinone.startup.server;
 
-import javax.sql.DataSource;
+import org.jallinone.commons.java.ApplicationConsts;
+import org.jallinone.startup.java.DbConnVO;
+import org.openswing.swing.logger.server.Logger;
 
-import org.openswing.swing.server.*;
-import org.openswing.swing.message.receive.java.*;
-import javax.servlet.http.*;
-import javax.servlet.http.*;
-import javax.servlet.http.*;
-import javax.servlet.*;
-import org.jallinone.startup.java.*;
-import java.util.*;
-import org.openswing.swing.logger.server.*;
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.*;
-import java.util.*;
-import org.jallinone.commons.java.*;
+import java.util.ArrayList;
 
 
 /**
@@ -107,11 +100,11 @@ public class SQLExecutionBean {
             sql = replace(sql, " TIMESTAMP", " DATETIME ");
             sql = replace(sql, " DATE ", " DATETIME  ");
           }
-					else if (vo.getDriverName().equals("com.microsoft.sqlserver.jdbc.SQLServerDriver")) {
-						sql = replace(sql, " TIMESTAMP", " DATETIME ");
-						sql = replace(sql, " DATE ", " DATETIME  ");
-					}
-          else if (vo.getDriverName().toLowerCase().indexOf("postgres")!=-1) {
+          else if (vo.getDriverName().equals("com.microsoft.sqlserver.jdbc.SQLServerDriver")) {
+            sql = replace(sql, " TIMESTAMP", " DATETIME ");
+            sql = replace(sql, " DATE ", " DATETIME  ");
+          }
+          else if (vo.getDriverName().toLowerCase().contains("postgres")) {
             sql = replace(sql, " DATETIME", " TIMESTAMP ");
             sql = replace(sql, " DATE ", " TIMESTAMP ");
           }
@@ -128,19 +121,19 @@ public class SQLExecutionBean {
           }
           if (sql.indexOf(":COMPANY_DESCRIPTION") != -1) {
             sql = replace(sql, ":COMPANY_DESCRIPTION",
-                          "'" + vo.getCompanyDescription() + "'");
+                    "'" + vo.getCompanyDescription() + "'");
           }
           if (sql.indexOf(":LANGUAGE_CODE") != -1) {
             sql = replace(sql, ":LANGUAGE_CODE",
-                          "'" + vo.getLanguageCode() + "'");
+                    "'" + vo.getLanguageCode() + "'");
           }
           if (sql.indexOf(":LANGUAGE_DESCRIPTION") != -1) {
             sql = replace(sql, ":LANGUAGE_DESCRIPTION",
-                          "'" + vo.getLanguageDescription() + "'");
+                    "'" + vo.getLanguageDescription() + "'");
           }
           if (sql.indexOf(":CLIENT_LANGUAGE_CODE") != -1) {
             sql = replace(sql, ":CLIENT_LANGUAGE_CODE",
-                          "'" + vo.getClientLanguageCode() + "'");
+                    "'" + vo.getClientLanguageCode() + "'");
           }
           if (sql.indexOf(":PASSWORD") != -1) {
             sql = replace(sql, ":PASSWORD", "'" + vo.getAdminPassword() + "'");
@@ -202,9 +195,9 @@ public class SQLExecutionBean {
             while((pos=sql.indexOf("DEFAULT "))!=-1) {
               defaultValue = sql.substring(pos, sql.indexOf(",", pos));
               sql = replace(
-                  sql,
-                  defaultValue,
-                  ""
+                      sql,
+                      defaultValue,
+                      ""
               );
             }
 
@@ -212,9 +205,9 @@ public class SQLExecutionBean {
           while((pos=sql.indexOf("FOREIGN KEY"))!=-1) {
             oldfk = sql.substring(pos,sql.indexOf(")",sql.indexOf(")",pos)+1)+1);
             sql = replace(
-                sql,
-                oldfk,
-                ""
+                    sql,
+                    oldfk,
+                    ""
             );
             newfk = new StringBuffer("ALTER TABLE ");
             newfk.append(sql.substring(sql.indexOf(" TABLE ")+7,sql.indexOf("(")).trim());
@@ -231,9 +224,9 @@ public class SQLExecutionBean {
           while((pos=sql.indexOf("INDEX "))!=-1) {
             oldIndex = sql.substring(pos,sql.indexOf(")",pos)+1);
             sql = replace(
-                sql,
-                oldIndex,
-                ""
+                    sql,
+                    oldIndex,
+                    ""
             );
             newIndex = new StringBuffer("CREATE ");
             newIndex.append(oldIndex.substring(0,oldIndex.indexOf("(")));
@@ -249,105 +242,108 @@ public class SQLExecutionBean {
 
           // check for unicode chars...
           while((index=sql.indexOf("\\u"))!=-1) {
-        	  for(int i=index+2;i<Math.min(sql.length(),index+2+6);i++)
-        		  if (Character.isDigit(sql.charAt(i)) ||
-        			  sql.charAt(i)=='A' ||
-        			  sql.charAt(i)=='B' ||
-        			  sql.charAt(i)=='C' ||
-        			  sql.charAt(i)=='D' ||
-        			  sql.charAt(i)=='E' ||
-								sql.charAt(i)=='F')
-							if (unicode.length() < 4)
-        			  unicode.append(sql.charAt(i));
-        		  else
-        			  break;
-        	  if (unicode.length()>0) {
-        		  sql.delete(index, index+1+unicode.length());
-        		  sql.setCharAt(index, new Character((char)Integer.valueOf(unicode.toString(),16).intValue()).charValue());
-        		  unicode.delete(0, unicode.length());
-        	  }
+            for(int i=index+2;i<Math.min(sql.length(),index+2+6);i++)
+              if (Character.isDigit(sql.charAt(i)) ||
+                      sql.charAt(i)=='A' ||
+                      sql.charAt(i)=='B' ||
+                      sql.charAt(i)=='C' ||
+                      sql.charAt(i)=='D' ||
+                      sql.charAt(i)=='E' ||
+                      sql.charAt(i)=='F')
+                if (unicode.length() < 4)
+                  unicode.append(sql.charAt(i));
+                else
+                  break;
+            if (unicode.length()>0) {
+              sql.delete(index, index+1+unicode.length());
+              sql.setCharAt(index, new Character((char)Integer.valueOf(unicode.toString(),16).intValue()).charValue());
+              unicode.delete(0, unicode.length());
+            }
           }
 
 
-					if (sql.toString().toUpperCase().indexOf("DROP TABLE")!=-1) {
-						// remove fks before dropping table!
-						String table = sql.toString().toUpperCase().replace('\n',' ').replace('\r',' ').trim();
-						table = table.substring(10).trim();
-						if (table.endsWith(";"))
-							table = table.substring(0,table.length()-1);
-						ResultSet rset = conn.getMetaData().getExportedKeys(null,vo.getUsername().toUpperCase(),table);
-						String fkName = null;
-						String tName = null;
-						Statement stmt2 = conn.createStatement();
-						boolean fksFound = false;
-						while(rset.next()) {
-							fksFound = true;
-							tName = rset.getString(7);
-							fkName = rset.getString(12);
+          if (sql.toString().toUpperCase().contains("DROP TABLE")) {
+            // remove fks before dropping table!
+            String table = sql.toString().toUpperCase().replace('\n',' ').replace('\r',' ').trim();
+            table = table.substring(10).trim();
+            if (table.endsWith(";"))
+              table = table.substring(0,table.length()-1);
+            ResultSet rset = conn.getMetaData().getExportedKeys(null,vo.getUsername().toUpperCase(),table);
+            String fkName = null;
+            String tName = null;
+            Statement stmt2 = conn.createStatement();
+            boolean fksFound = false;
+            while(rset.next()) {
+              fksFound = true;
+              tName = rset.getString(7);
+              fkName = rset.getString(12);
 
-							if (vo.getDriverName().equals("com.mysql.jdbc.Driver"))
-								stmt2.execute("ALTER TABLE "+tName+" DROP FOREIGN KEY "+fkName);
-							else
-								stmt2.execute("ALTER TABLE "+tName+" DROP CONSTRAINT "+fkName);
-						}
-						try {
-							rset.close();
-						}
-						catch (Exception ex6) {}
+              if (vo.getDriverName().equals("com.mysql.jdbc.Driver"))
+                stmt2.execute("ALTER TABLE "+tName+" DROP FOREIGN KEY "+fkName);
+              else
+                stmt2.execute("ALTER TABLE "+tName+" DROP CONSTRAINT "+fkName);
+            }
+            try {
+              rset.close();
+            }
+            catch (Exception ex6) {}
 
-						if (!fksFound &&
-								!vo.getDriverName().equals("oracle.jdbc.driver.OracleDriver") &&
-								!vo.getDriverName().equals("com.microsoft.jdbc.sqlserver.SQLServerDriver") &&
-								!vo.getDriverName().equals("com.microsoft.sqlserver.jdbc.SQLServerDriver") &&
-								!vo.getDriverName().equals("com.mysql.jdbc.Driver")) {
-							// case postgres...
-							rset = conn.getMetaData().getExportedKeys(null,null,null);
-							while(rset.next()) {
-								if (rset.getString(3).toUpperCase().equals(table)) {
-									tName = rset.getString(7);
-									fkName = rset.getString(12);
+            if (!fksFound &&
+                    !vo.getDriverName().equals("oracle.jdbc.driver.OracleDriver") &&
+                    !vo.getDriverName().equals("com.microsoft.jdbc.sqlserver.SQLServerDriver") &&
+                    !vo.getDriverName().equals("com.microsoft.sqlserver.jdbc.SQLServerDriver") &&
+                    !vo.getDriverName().equals("com.mysql.jdbc.Driver")
+                    && !vo.getDriverName().equals("org.sqlite.JDBC")) {
+              // case postgres...
+              rset = conn.getMetaData().getExportedKeys(null,null,null);
+              while(rset.next()) {
+                if (rset.getString(3).toUpperCase().equals(table)) {
+                  tName = rset.getString(7);
+                  fkName = rset.getString(12);
 
-									if (vo.getDriverName().equals("com.mysql.jdbc.Driver"))
-										stmt2.execute("ALTER TABLE "+tName+" DROP FOREIGN KEY "+fkName);
-									else
-										stmt2.execute("ALTER TABLE "+tName+" DROP CONSTRAINT "+fkName);
-								}
-							}
-							try {
-								rset.close();
-							}
-							catch (Exception ex6) {}
-						}
+                  if (vo.getDriverName().equals("com.mysql.jdbc.Driver"))
+                    stmt2.execute("ALTER TABLE "+tName+" DROP FOREIGN KEY "+fkName);
+                  else
+                    stmt2.execute("ALTER TABLE "+tName+" DROP CONSTRAINT "+fkName);
+                }
+              }
+              try {
+                rset.close();
+              }
+              catch (Exception ex6) {}
+            }
 
-						try {
-							stmt2.close();
-						}
-						catch (Exception ex6) {}
+            try {
+              stmt2.close();
+            }
+            catch (Exception ex6) {}
 
           } // end if
 
           if (sql.toString().trim().length()>0) {
-            pstmt = conn.prepareStatement(sql.toString().substring(0,sql.length() - 1));
+            String query = sql.toString().substring(0,sql.length() - 1);
+            System.out.println("Execute query: " + query);
+            pstmt = conn.prepareStatement(query);
             for (int i = 0; i < vals.size(); i++) {
               pstmt.setObject(i + 1, vals.get(i));
             }
 
-						try {
-							pstmt.execute();
-						}
-						catch (SQLException ex4) {
-							try {
-								if (sql.toString().toUpperCase().indexOf("DROP TABLE")!=-1) {
+            try {
+              pstmt.execute();
+            }
+            catch (SQLException ex4) {
+              try {
+                if (sql.toString().toUpperCase().contains("DROP TABLE")) {
 //									Logger.error("NONAME", this.getClass().getName(), "executeSQL",
 //															 "Invalid SQL: " + sql, ex4);
-								}
-								else
-									throw ex4;
-							}
-							catch (Exception exx4) {
-								throw ex4;
-							}
-						}
+                }
+                else
+                  throw ex4;
+              }
+              catch (Exception exx4) {
+                throw ex4;
+              }
+            }
             pstmt.close();
           }
 
@@ -365,7 +361,7 @@ public class SQLExecutionBean {
         }
         catch (SQLException ex4) {
           Logger.error("NONAME", this.getClass().getName(), "executeSQL",
-                       "Invalid SQL: " + sql, ex4);
+                  "Invalid SQL: " + sql, ex4);
         }
         pstmt.close();
       }
@@ -378,18 +374,18 @@ public class SQLExecutionBean {
         }
         catch (SQLException ex3) {
           Logger.error("NONAME", this.getClass().getName(), "executeSQL",
-                       "Invalid SQL: " + sql, ex3);
+                  "Invalid SQL: " + sql, ex3);
         }
         pstmt.close();
       }
 
-	     conn.commit();
+      conn.commit();
 
     }
     catch (Throwable ex) {
       try {
         Logger.error("NONAME", this.getClass().getName(), "executeSQL",
-                     "Invalid SQL: " + sql, ex);
+                "Invalid SQL: " + sql, ex);
       }
       catch (Exception ex2) {
       }
