@@ -236,12 +236,13 @@ public class JettyRunner  {
     }
 
     public String getBaseURL() {
-        return "http://127.0.0.1:9999";
+        return "http://127.0.0.1:" + port;
     }
 
     public URI extractJar() throws IOException, URISyntaxException {
-        File tmpWar = new File(FileUtils.getTempDirectory(), "erp");
-        if (!tmpWar.exists()) {
+        File tmpWar = FileHelper.getTmpWar();
+        File[] warFiles = tmpWar.listFiles();
+        if (warFiles == null || warFiles.length == 0) {
             tmpWar.mkdirs();
         } else {
             return tmpWar.toURI();

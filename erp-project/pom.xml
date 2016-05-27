@@ -7,7 +7,7 @@
     <groupId>com.luhonghai</groupId>
     <artifactId>erp-project</artifactId>
     <packaging>war</packaging>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>ERP Project</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

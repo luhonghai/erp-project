@@ -16,10 +16,14 @@ public class FileHelper {
 
     public static Class BASE_CLASS = FileHelper.class;
 
-    public static int APP_VERSION = 1;
-
     public static File getTmpWar() {
-        File erpDir =  new File(FileUtils.getTempDirectory(), "erp" + APP_VERSION);
+        File erpDir;
+        try {
+            erpDir = new File(new File(getWebRootResourceUri()).getParentFile(), "data");
+        } catch (Exception e) {
+            e.printStackTrace();
+            erpDir = new File(FileUtils.getTempDirectory(), "data");
+        }
         if (!erpDir.exists()) {
             erpDir.mkdirs();
         }
