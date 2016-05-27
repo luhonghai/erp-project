@@ -175,25 +175,25 @@ public class StartupFrame extends JFrame {
       jbInit();
       setSize(650,500);
       setLocation(
-         (Toolkit.getDefaultToolkit().getScreenSize().width-getSize().width)/2,
-         (Toolkit.getDefaultToolkit().getScreenSize().height-getSize().height)/2
+              (Toolkit.getDefaultToolkit().getScreenSize().width-getSize().width)/2,
+              (Toolkit.getDefaultToolkit().getScreenSize().height-getSize().height)/2
       );
 
       dbTypeComboBox.addItem("Oracle");
       dbTypeComboBox.addItem("MS SqlServer (older JDBC driver)");
-			dbTypeComboBox.addItem("MS SqlServer (newer JDBC driver)");
+      dbTypeComboBox.addItem("MS SqlServer (newer JDBC driver)");
       dbTypeComboBox.addItem("My SQL");
       dbTypeComboBox.addItem("SQLite");
       dbTypeComboBox.addItem("Other Database");
-      dbTypeComboBox.setSelectedIndex(0);
+      dbTypeComboBox.setSelectedIndex(4);
 
       clientLanguageCodeComboBox.addItem("English");
       clientLanguageCodeComboBox.addItem("Italiano");
       clientLanguageCodeComboBox.addItem("Espanol");
       clientLanguageCodeComboBox.addItem("Portuguese/Brazilian");
-			clientLanguageCodeComboBox.addItem("German");
-			clientLanguageCodeComboBox.addItem("Croatian");
-			clientLanguageCodeComboBox.addItem("Russian");
+      clientLanguageCodeComboBox.addItem("German");
+      clientLanguageCodeComboBox.addItem("Croatian");
+      clientLanguageCodeComboBox.addItem("Russian");
       clientLanguageCodeComboBox.setSelectedIndex(0);
 
       setVisible(true);
@@ -260,7 +260,7 @@ public class StartupFrame extends JFrame {
     companyCodeLabel.setText("Company Code");
     introLabel.setText("Now you can define one company and one language.");
     intro2Label.setText("When setup is finished, you can add other companies and other languages, " +
-    "inside the application.");
+            "inside the application.");
     companyCodeTF.setText("");
     companyCodeTF.setColumns(15);
     companyCodeTF.addFocusListener(new StartupFrame_companyCodeTF_focusAdapter(this));
@@ -537,92 +537,92 @@ public class StartupFrame extends JFrame {
     else if (pos==2) {
       if (companyCodeTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a company code",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a company code",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (companyDescrTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a company description (e.g. corporate name...)",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a company description (e.g. corporate name...)",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (languageCodeTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a language code (e.g. 'EN', 'IT', ...)",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a language code (e.g. 'EN', 'IT', ...)",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (companyCodeTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a language description (e.g. 'English', 'Italiano', ...)",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a language description (e.g. 'English', 'Italiano', ...)",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (adminPasswdTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a password for administrator user",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a password for administrator user",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
 
       if (currencyCodeTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a currency code",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a currency code",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (symbTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a currency symbol",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a currency symbol",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (decSymTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a decimal symbol for the currency",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a decimal symbol for the currency",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (thTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify a thousand symbol for the currency",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify a thousand symbol for the currency",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
       if (decTF.getText().trim().length()==0) {
         JOptionPane.showMessageDialog(
-            this,
-            "You must specify the number of decimal for the currency",
-            "Error",
-            JOptionPane.ERROR_MESSAGE
+                this,
+                "You must specify the number of decimal for the currency",
+                "Error",
+                JOptionPane.ERROR_MESSAGE
         );
         return;
       }
@@ -655,29 +655,29 @@ public class StartupFrame extends JFrame {
 
       Response res = ClientUtils.getData("getBeansFactoryName",new Object[0]);
       if (res.isError()) {
-          JOptionPane.showMessageDialog(
-                  this,
-                  res.getErrorMessage(),
-                  "Error",
-                  JOptionPane.ERROR_MESSAGE
-              );
-              return;
+        JOptionPane.showMessageDialog(
+                this,
+                res.getErrorMessage(),
+                "Error",
+                JOptionPane.ERROR_MESSAGE
+        );
+        return;
       }
-	  String beanFactoryName = ((VOResponse)res).getVo().toString();
-	  if ("org.jallinone.commons.server.MuleBeansFactory".equals(beanFactoryName)) {
-          JOptionPane.showMessageDialog(
-                  this,
-                  "Before using JAllInOne with SOA you have to restart the web application!",
-                  "Attention",
-                  JOptionPane.INFORMATION_MESSAGE
-              );
-              return;
+      String beanFactoryName = ((VOResponse)res).getVo().toString();
+      if ("org.jallinone.commons.server.MuleBeansFactory".equals(beanFactoryName)) {
+        JOptionPane.showMessageDialog(
+                this,
+                "Before using JAllInOne with SOA you have to restart the web application!",
+                "Attention",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        return;
       }
-	  else {
-	      // view the login window before viewing MDI frame...
-	      LoginDialog d = new LoginDialog(null,false,clientApplet);
-	      dispose();
-	  }
+      else {
+        // view the login window before viewing MDI frame...
+        LoginDialog d = new LoginDialog(null,false,clientApplet);
+        dispose();
+      }
     }
   }
 
@@ -704,28 +704,28 @@ public class StartupFrame extends JFrame {
       else
         dbConnVO.setUrl("jdbc:microsoft:sqlserver://"+hostTF.getText().trim()+";DatabaseName="+sidTF.getText().trim()+";SelectMethod=cursor");
     }
-		else if (dbTypeComboBox.getSelectedIndex()==2) {
-			// MS SqlServer database...
-			dbConnVO.setDriverName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			dbConnVO.setPassword(passwordTF.getText().trim());
-			dbConnVO.setUsername(usernameTF.getText().trim());
-			if (portTF.getText().trim().length()>0)
-				dbConnVO.setUrl("jdbc:sqlserver://"+hostTF.getText().trim()+":"+portTF.getText().trim()+";DatabaseName="+sidTF.getText().trim()+";SelectMethod=cursor");
-			else
-				dbConnVO.setUrl("jdbc:sqlserver://"+hostTF.getText().trim()+";DatabaseName="+sidTF.getText().trim()+";SelectMethod=cursor");
-		}
+    else if (dbTypeComboBox.getSelectedIndex()==2) {
+      // MS SqlServer database...
+      dbConnVO.setDriverName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+      dbConnVO.setPassword(passwordTF.getText().trim());
+      dbConnVO.setUsername(usernameTF.getText().trim());
+      if (portTF.getText().trim().length()>0)
+        dbConnVO.setUrl("jdbc:sqlserver://"+hostTF.getText().trim()+":"+portTF.getText().trim()+";DatabaseName="+sidTF.getText().trim()+";SelectMethod=cursor");
+      else
+        dbConnVO.setUrl("jdbc:sqlserver://"+hostTF.getText().trim()+";DatabaseName="+sidTF.getText().trim()+";SelectMethod=cursor");
+    }
     else if (dbTypeComboBox.getSelectedIndex()==3) {
       // MySQL database...
       dbConnVO.setDriverName("com.mysql.jdbc.Driver");
       dbConnVO.setPassword(passwordTF.getText().trim());
       dbConnVO.setUsername(usernameTF.getText().trim());
-			 String jdbcUrl = null;
-     	 if (portTF.getText().trim().length()>0)
-     		jdbcUrl =	"jdbc:mysql://"+hostTF.getText().trim()+":"+portTF.getText().trim()+"/"+sidTF.getText().trim();
-			else
-				jdbcUrl =	"jdbc:mysql://"+hostTF.getText().trim()+"/"+sidTF.getText().trim();
-			if (unicodeCheckBox.isSelected())
-				jdbcUrl += "?characterEncoding=UTF-8&amp;useUnicode=true";
+      String jdbcUrl = null;
+      if (portTF.getText().trim().length()>0)
+        jdbcUrl =	"jdbc:mysql://"+hostTF.getText().trim()+":"+portTF.getText().trim()+"/"+sidTF.getText().trim();
+      else
+        jdbcUrl =	"jdbc:mysql://"+hostTF.getText().trim()+"/"+sidTF.getText().trim();
+      if (unicodeCheckBox.isSelected())
+        jdbcUrl += "?characterEncoding=UTF-8&amp;useUnicode=true";
       dbConnVO.setUrl(jdbcUrl);
     }
     else if (dbTypeComboBox.getSelectedIndex()==4) {
@@ -762,27 +762,27 @@ public class StartupFrame extends JFrame {
     dbConnVO.setThousandSymbolREG03(thTF.getText().trim().substring(0,1));
 
     if (controlVar1.getValue()==null || controlVar1.getValue().toString().trim().equals(""))
-        dbConnVO.setVariant1("*");
+      dbConnVO.setVariant1("*");
     else
       dbConnVO.setVariant1(controlVar1.getValue().toString().trim());
 
     if (controlVar2.getValue()==null || controlVar2.getValue().toString().trim().equals(""))
-        dbConnVO.setVariant2("*");
+      dbConnVO.setVariant2("*");
     else
       dbConnVO.setVariant2(controlVar2.getValue().toString().trim());
 
     if (controlVar3.getValue()==null || controlVar3.getValue().toString().trim().equals(""))
-        dbConnVO.setVariant3("*");
+      dbConnVO.setVariant3("*");
     else
       dbConnVO.setVariant3(controlVar3.getValue().toString().trim());
 
     if (controlVar4.getValue()==null || controlVar4.getValue().toString().trim().equals(""))
-        dbConnVO.setVariant4("*");
+      dbConnVO.setVariant4("*");
     else
       dbConnVO.setVariant4(controlVar4.getValue().toString().trim());
 
     if (controlVar5.getValue()==null || controlVar5.getValue().toString().trim().equals(""))
-        dbConnVO.setVariant5("*");
+      dbConnVO.setVariant5("*");
     else
       dbConnVO.setVariant5(controlVar5.getValue().toString().trim());
 
@@ -800,20 +800,20 @@ public class StartupFrame extends JFrame {
       dbConnVO.setClientLanguageCode("ES");
     else if (clientLanguageCodeComboBox.getSelectedIndex()==3)
       dbConnVO.setClientLanguageCode("PTBR");
-		else if (clientLanguageCodeComboBox.getSelectedIndex()==4)
-			dbConnVO.setClientLanguageCode("DE");
-		else if (clientLanguageCodeComboBox.getSelectedIndex()==5)
-			dbConnVO.setClientLanguageCode("HR");
-		else
-			dbConnVO.setClientLanguageCode("RU");
+    else if (clientLanguageCodeComboBox.getSelectedIndex()==4)
+      dbConnVO.setClientLanguageCode("DE");
+    else if (clientLanguageCodeComboBox.getSelectedIndex()==5)
+      dbConnVO.setClientLanguageCode("HR");
+    else
+      dbConnVO.setClientLanguageCode("RU");
     dbConnVO.setAdminPassword(adminPasswdTF.getText().trim());
     Response response = ClientUtils.getData("createConfigFile",dbConnVO);
     if (response.isError()) {
       JOptionPane.showMessageDialog(
-          this,
-          response.getErrorMessage(),
-          "Error",
-          JOptionPane.ERROR_MESSAGE
+              this,
+              response.getErrorMessage(),
+              "Error",
+              JOptionPane.ERROR_MESSAGE
       );
       return false;
     }
@@ -823,6 +823,7 @@ public class StartupFrame extends JFrame {
 
 
   void dbTypeComboBox_itemStateChanged(ItemEvent e) {
+    dbTypePanel.setVisible(true);
     if (e.getStateChange()==e.SELECTED) {
       if (dbTypeComboBox.getSelectedIndex()==0) {
         cardLayout2.show(dbTypePanel,"OSM");
@@ -832,13 +833,18 @@ public class StartupFrame extends JFrame {
         cardLayout2.show(dbTypePanel,"OSM");
         portTF.setText("1434");
       }
-			else if (dbTypeComboBox.getSelectedIndex()==2) {
-				cardLayout2.show(dbTypePanel,"OSM");
-				portTF.setText("1434");
-			}
+      else if (dbTypeComboBox.getSelectedIndex()==2) {
+        cardLayout2.show(dbTypePanel,"OSM");
+        portTF.setText("1434");
+      }
       else if (dbTypeComboBox.getSelectedIndex()==3) {
         cardLayout2.show(dbTypePanel,"OSM");
         portTF.setText("3306");
+      }
+      else if (dbTypeComboBox.getSelectedIndex()==4) {
+        cardLayout2.show(dbTypePanel,"OSM");
+        portTF.setText("3306");
+        dbTypePanel.setVisible(false);
       }
       else
         cardLayout2.show(dbTypePanel,"OTHERDB");
