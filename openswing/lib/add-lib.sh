@@ -1,1 +1,0 @@
-mvn install:install-file -Dfile=pooler.jar -DgroupId=com.rp -DartifactId=database -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true

@@ -1,0 +1,55 @@
+package com.rp.log;
+
+public interface Logger extends ObjectLogger
+{
+	void debug (int s);
+	void info (int s);
+	void warn (int s);
+	void error (int s);
+	void fatal (int s);
+	void debug (long s);
+	void info (long s);
+	void warn (long s);
+	void error (long s);
+	void fatal (long s);
+	void debug (double s);
+	void info (double s);
+	void warn (double s);
+	void error (double s);
+	void fatal (double s);
+	void debug (float s);
+	void info (float s);
+	void warn (float s);
+	void error (float s);
+	void fatal (float s);
+	void debug (char s);
+	void info (char s);
+	void warn (char s);
+	void error (char s);
+	void fatal (char s);
+	void debug (byte s);
+	void info (byte s);
+	void warn (byte s);
+	void error (byte s);
+	void fatal (byte s);
+	void debug (short s);
+	void info (short s);
+	void warn (short s);
+	void error (short s);
+	void fatal (short s);
+	void debug (boolean s);
+	void info (boolean s);
+	void warn (boolean s);
+	void error (boolean s);
+	void fatal (boolean s);
+	void debug (char[] s);
+	void info (char[] s);
+	void warn (char[] s);
+	void error (char[] s);
+	void fatal (char[] s);
+	void debug (String s);
+	void info (String s);
+	void warn (String s);
+	void error (String s);
+	void fatal (String s);
+}
