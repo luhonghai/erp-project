@@ -1,27 +1,9 @@
 package org.jallinone.commons.client;
 
-import java.util.*;
-import org.openswing.swing.mdi.client.*;
-import org.openswing.swing.util.client.ClientSettings;
-import org.openswing.swing.internationalization.java.EnglishOnlyResourceFactory;
-import org.openswing.swing.util.client.*;
-import org.openswing.swing.permissions.client.*;
-import java.awt.Image;
-import javax.swing.*;
-import org.openswing.swing.internationalization.java.Language;
-import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.DefaultMutableTreeNode;
-import org.openswing.swing.mdi.java.ApplicationFunction;
-import org.openswing.swing.internationalization.java.XMLResourcesFactory;
 import org.openswing.swing.domains.java.Domain;
-import org.openswing.swing.internationalization.java.*;
-import org.openswing.swing.message.receive.java.*;
-import org.openswing.swing.permissions.java.ButtonsAuthorizations;
-import org.openswing.swing.message.receive.java.UserAuthorizationsResponse;
-import netscape.javascript.JSObject;
-import org.jallinone.startup.client.StartupFrame;
-import org.jallinone.system.java.ApplicationParametersVO;
-import java.awt.Color;
+import org.openswing.swing.mdi.client.MDIFrame;
+
+import java.util.HashMap;
 //import org.openswing.swing.util.client.HessianObjectSender;
 
 

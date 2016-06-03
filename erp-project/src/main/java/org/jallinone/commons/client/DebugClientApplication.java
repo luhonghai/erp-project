@@ -1,29 +1,19 @@
 package org.jallinone.commons.client;
 
+import org.jallinone.startup.client.StartupFrame;
+import org.openswing.swing.domains.java.Domain;
+import org.openswing.swing.internationalization.java.XMLResourcesFactory;
+import org.openswing.swing.mdi.client.Clock;
+import org.openswing.swing.mdi.client.GenericStatusPanel;
+import org.openswing.swing.mdi.client.MDIFrame;
+import org.openswing.swing.message.receive.java.VOResponse;
+import org.openswing.swing.permissions.java.ButtonsAuthorizations;
+import org.openswing.swing.util.client.ClientSettings;
+import org.openswing.swing.util.client.ClientUtils;
+
+import javax.swing.*;
 import java.math.BigDecimal;
 import java.util.*;
-
-import org.openswing.swing.mdi.client.*;
-import org.openswing.swing.util.client.ClientSettings;
-import org.openswing.swing.internationalization.java.EnglishOnlyResourceFactory;
-import org.openswing.swing.util.client.*;
-import org.openswing.swing.permissions.client.*;
-import java.awt.Image;
-import javax.swing.*;
-import org.openswing.swing.internationalization.java.Language;
-import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.DefaultMutableTreeNode;
-import org.openswing.swing.mdi.java.ApplicationFunction;
-import org.openswing.swing.internationalization.java.XMLResourcesFactory;
-import org.openswing.swing.domains.java.Domain;
-import org.openswing.swing.internationalization.java.*;
-import org.openswing.swing.message.receive.java.*;
-import org.openswing.swing.permissions.java.ButtonsAuthorizations;
-import org.openswing.swing.message.receive.java.UserAuthorizationsResponse;
-import netscape.javascript.JSObject;
-import org.jallinone.commons.java.ApplicationConsts;
-import org.jallinone.startup.client.StartupFrame;
-import java.awt.Color;
 
 
 /**

@@ -1,33 +1,29 @@
 package org.jallinone.sales.documents.client;
 
-import org.openswing.swing.table.client.Grid;
-import org.openswing.swing.message.receive.java.*;
-import java.util.ArrayList;
-import org.openswing.swing.message.receive.java.*;
-import org.openswing.swing.util.client.ClientUtils;
-import org.jallinone.sales.documents.java.GridSaleDocVO;
-import org.openswing.swing.mdi.client.MDIFrame;
-import org.jallinone.commons.client.CompanyFormController;
-import org.jallinone.sales.documents.java.SaleDocPK;
-import org.openswing.swing.util.java.Consts;
-import org.jallinone.sales.documents.java.DetailSaleDocVO;
-import org.openswing.swing.form.client.Form;
-import org.jallinone.commons.java.ApplicationConsts;
-import org.openswing.swing.mdi.client.InternalFrame;
-import java.awt.*;
-import javax.swing.*;
-import org.openswing.swing.client.*;
-import org.jallinone.commons.client.CustomizedControls;
-import org.openswing.swing.util.client.ClientSettings;
-import java.util.HashSet;
-import java.awt.event.*;
-import org.jallinone.sales.documents.headerdiscounts.client.SaleDocDiscountsPanel;
-import org.jallinone.sales.documents.headercharges.client.SaleDocChargesPanel;
-import org.openswing.swing.client.GenericButtonController;
-import org.jallinone.sales.documents.activities.client.SaleDocActivitiesPanel;
-import java.util.HashMap;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.view.JRViewer;
+import org.jallinone.commons.client.CustomizedControls;
+import org.jallinone.commons.java.ApplicationConsts;
+import org.jallinone.sales.documents.activities.client.SaleDocActivitiesPanel;
+import org.jallinone.sales.documents.headercharges.client.SaleDocChargesPanel;
+import org.jallinone.sales.documents.headerdiscounts.client.SaleDocDiscountsPanel;
+import org.jallinone.sales.documents.java.DetailSaleDocVO;
+import org.jallinone.sales.documents.java.SaleDocPK;
+import org.openswing.swing.client.*;
+import org.openswing.swing.form.client.Form;
+import org.openswing.swing.mdi.client.InternalFrame;
+import org.openswing.swing.mdi.client.MDIFrame;
+import org.openswing.swing.message.receive.java.Response;
+import org.openswing.swing.message.receive.java.VOResponse;
+import org.openswing.swing.util.client.ClientSettings;
+import org.openswing.swing.util.client.ClientUtils;
+import org.openswing.swing.util.java.Consts;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.util.HashMap;
+import java.util.HashSet;
 
 
 /**
