@@ -126,9 +126,10 @@ public class ClientApplet extends ClientUtils implements MDIController,LoginCont
     xmlFiles.put("IT","Resources_it.xml");
     xmlFiles.put("ES","Resources_es.xml");
     xmlFiles.put("PTBR","Resources_PTBR.xml");
-		xmlFiles.put("DE","Resources_de.xml");
-		xmlFiles.put("HR","Resources_hr.xml");
-		xmlFiles.put("RU","Resources_ru.xml");
+    xmlFiles.put("DE","Resources_de.xml");
+    xmlFiles.put("HR","Resources_hr.xml");
+    xmlFiles.put("RU","Resources_ru.xml");
+    xmlFiles.put("VI","Resources_vi.xml");
 
     // initialize internationalization settings, according to user language identifier...
     ClientSettings clientSettings = new ClientSettings(
@@ -181,9 +182,10 @@ public class ClientApplet extends ClientUtils implements MDIController,LoginCont
     languagesDomain.addDomainPair("IT","italian");
     languagesDomain.addDomainPair("ES","spanish");
     languagesDomain.addDomainPair("PTBR","brazilian");
-		languagesDomain.addDomainPair("DE","german");
-		languagesDomain.addDomainPair("HR","croatian");
-		languagesDomain.addDomainPair("RU","russian");
+    languagesDomain.addDomainPair("DE","german");
+    languagesDomain.addDomainPair("HR","croatian");
+    languagesDomain.addDomainPair("RU","russian");
+    languagesDomain.addDomainPair("VI","vietnamese");
     domains.put(
       languagesDomain.getDomainId(),
       languagesDomain
@@ -716,9 +718,10 @@ public class ClientApplet extends ClientUtils implements MDIController,LoginCont
     xmlFiles.put("IT","Resources_it.xml");
     xmlFiles.put("ES","Resources_es.xml");
     xmlFiles.put("PTBR","Resources_PTBR.xml");
-		xmlFiles.put("DE","Resources_de.xml");
-		xmlFiles.put("HR","Resources_hr.xml");
-		xmlFiles.put("RU","Resources_ru.xml");
+    xmlFiles.put("DE","Resources_de.xml");
+    xmlFiles.put("HR","Resources_hr.xml");
+    xmlFiles.put("RU","Resources_ru.xml");
+    xmlFiles.put("VI","Resources_vi.xml");
 
     // initialize internationalization settings, according to user language identifier...
     ClientSettings clientSettings = new ClientSettings(
