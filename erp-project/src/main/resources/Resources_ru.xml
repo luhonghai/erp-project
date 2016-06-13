@@ -1035,83 +1035,83 @@
   <object key="docNr" value="Số tài liệu" />
   <object key="please set a date" value="Hãy thiết lập 1 ngày" />
   <object key="item date" value="Ngày" />
-  <object key="loss/profit econ. account" value="Thất thoát/" />
-  <object key="loss/profit patrim. account" value="Loss/profit patrim. account" />
-  <object key="endorse loss/profit to econ. account" value="Endorse loss/profit to econ. account" />
-  <object key="endorse loss/profit to patrim. account" value="Endorse loss/profit to patrim. account" />
-  <object key="closing account" value="Closing account" />
-  <object key="close accounts" value="Close accounts" />
-  <object key="please set the economic account code" value="Please set the economic account code" />
-  <object key="please set the patrimonial account code" value="Please set the patrimonial account code" />
-  <object key="after closing accounts you will not be able to move settlements to new year. Continue?" value="After closing accounts you will not be able to move settlements to new year. Continue?" />
-  <object key="operation completed" value="Operation completed." />
-  <object key="no loss/profit found in the economic account" value="No loss/profit found in the economic account" />
-  <object key="endorse profit to patrimonial account" value="Endorse profit to patrimonial account" />
-  <object key="endorse loss to patrimonial account" value="Endorse loss to patrimonial account" />
-  <object key="close patrimonial accounts" value="Close patrimonial accounts" />
+  <object key="loss/profit econ. account" value="Thất thoát/lợi nhuận tài khoản" />
+  <object key="loss/profit patrim. account" value="Thất thoát/lợi nhuận tài khoản" />
+  <object key="endorse loss/profit to econ. account" value="Chứng thực thất thoát/lợi nhuận tài khoản" />
+  <object key="endorse loss/profit to patrim. account" value="Chứng thực thất thoát/lợi nhuận tài khoản" />
+  <object key="closing account" value="Đóng tài khoản" />
+  <object key="close accounts" value="Đóng tài khoản" />
+  <object key="please set the economic account code" value="Hãy thiết lập mã tài khoản" />
+  <object key="please set the patrimonial account code" value="Hãy thiết lập mã tài khoản" />
+  <object key="after closing accounts you will not be able to move settlements to new year. Continue?" value="Sau khi đóng tài khoản bạn không thể thanh toán sổ sách cho năm mới. Bạn muốn tiếp tục chứ?" />
+  <object key="operation completed" value="Hoàn thành." />
+  <object key="no loss/profit found in the economic account" value="Không có sự thất thoát/lợi nhuận của tài khoản" />
+  <object key="endorse profit to patrimonial account" value="Chứng thực lợi nhuận của tài khoản" />
+  <object key="endorse loss to patrimonial account" value="Chứng thực thất thoát của tài khoản" />
+  <object key="close patrimonial accounts" value="Đóng tài khoản" />
   <object key="open patrimonial accounts, using patrimonial settlements of year " value="Open patrimonial accounts, using patrimonial settlements of year " />
   <object key="endorse economic accounts to loss/profit economic account and to loss/profit patrimonial account" value="Endorse economic accounts to loss/profit economic account and to loss/profit patrimonial account" />
   <object key="endorse patrimonial accounts settlements of the previous year to the current one" value="Endorse patrimonial accounts balances of the previous year to the current one" />
-  <object key="open accounts" value="Open accounts" />
-  <object key="opening account" value="Opening account" />
-  <object key="account" value="Account" />
+  <object key="open accounts" value="Mở tài khoản" />
+  <object key="opening account" value="Mở tài khoản" />
+  <object key="account" value="Tài khoản" />
 
-  <object key="application parameters" value="Application Parameters" />
-  <object key="image repository path" value="Image Repository Path" />
-  <object key="image repository path selection" value="Image Repository Path selection" />
-  <object key="company parameters" value="Company Parameters" />
-  <object key="document repository path" value="Document Repository Path" />
-  <object key="document repository path selection" value="Document Repository Path selection" />
+  <object key="application parameters" value="Các thông số ứng dụng" />
+  <object key="image repository path" value="Đường dẫn kho ảnh" />
+  <object key="image repository path selection" value="Chọn đường dẫn kho ảnh" />
+  <object key="company parameters" value="Các thông số công ty" />
+  <object key="document repository path" value="Đường dẫn kho tài liệu" />
+  <object key="document repository path selection" value="Chọn đường dẫn kho tài liệu" />
 
-  <object key="loss/profit econ. endorse account" value="Loss/profit econ. endorse account" />
-  <object key="loss/profit patrim. endorse account" value="Loss/profit patrim. endorse account" />
-  <object key="accounts closing account" value="Accounts closing account" />
-  <object key="accounts opening account" value="Accounts opening account" />
-  <object key="user level parameters" value="User level parameters" />
-  <object key="company level parameters" value="Company level parameters" />
+  <object key="loss/profit econ. endorse account" value="Lợi nhuân/Thất thoát tài khoản" />
+  <object key="loss/profit patrim. endorse account" value="Lợi nhuân/Thất thoát tài khoản" />
+  <object key="accounts closing account" value="Đóng tài khoản" />
+  <object key="accounts opening account" value="Mở tài khoản" />
+  <object key="user level parameters" value="Các thông số cấp độ người dùng" />
+  <object key="company level parameters" value="Các thông số cấp độ công ty" />
 
   <object key="companyCodeSys01SYS15" value="ID công ty" />
-  <object key="customize reports" value="Customize Reports" />
-  <object key="upload files" value="Upload files" />
-  <object key="reports list" value="Reports list" />
-  <object key="reportNameSYS15" value="Report File Name" />
-  <object key="functionDescription" value="Function Description" />
-  <object key="files to upload" value="Files to upload" />
-  <object key="clear files" value="Clear files" />
-  <object key="import files" value="Import Files" />
-  <object key="there already exists a file with the same name in the list" value="There already exists a file with the same name in the list." />
-  <object key="select files" value="Select files" />
-  <object key="you must select at least one file to upload" value="You must select at least one file to upload." />
-  <object key="reportFileName" value="Report File Name" />
-  <object key="files" value="Files" />
-  <object key="customFunction" value="Custom Func." />
-  <object key="upload completed." value="Upload completed." />
-  <object key="some uploaded files already exists. overwrite them?" value="Some uploaded files already exists. Overwrite them?" />
+  <object key="customize reports" value="Chỉnh sửa báo cáo" />
+  <object key="upload files" value="Tải file lên" />
+  <object key="reports list" value="Danh sách báo cáo" />
+  <object key="reportNameSYS15" value="Tên báo cáo" />
+  <object key="functionDescription" value="Mô tả chức năng" />
+  <object key="files to upload" value="Tài liệu để tải lên" />
+  <object key="clear files" value="Xóa tài liệu" />
+  <object key="import files" value="Nhập tài liệu" />
+  <object key="there already exists a file with the same name in the list" value="Đã tồn tại tài liệu có cùng tên trong danh sách." />
+  <object key="select files" value="Chọn tài liệu" />
+  <object key="you must select at least one file to upload" value="Bạn phải chọn 1 file để tải lên." />
+  <object key="reportFileName" value="Tên báo cáo" />
+  <object key="files" value="Tài liệu" />
+  <object key="customFunction" value="Chức năng" />
+  <object key="upload completed." value="Tải lên thành công" />
+  <object key="some uploaded files already exists. overwrite them?" value="Một số tài liệu đã được tải lên. Bạn muốn ghi đè lên không?" />
 
-  <object key="sunday" value="Sunday" />
-  <object key="monday" value="Monday" />
-  <object key="tuesday" value="Tuesday" />
-  <object key="wednesday" value="Wednesday" />
-  <object key="thursday" value="Thursday" />
-  <object key="friday" value="Friday" />
-  <object key="saturday" value="Saturday" />
-  <object key="dayOfWeekSCH02" value="Day Of Week" />
-  <object key="morningStartHourSCH02" value="Start Morning" />
-  <object key="morningEndHourSCH02" value="End Morning" />
-  <object key="afternoonStartHourSCH02" value="Start Afternoon" />
-  <object key="afternoonEndHourSCH02" value="End Afternoon" />
-  <object key="start time must be less than end time" value="Start time must be less than end time." />
-  <object key="working days" value="Working Days" />
+  <object key="sunday" value="Chủ nhật" />
+  <object key="monday" value="Thứ hai" />
+  <object key="tuesday" value="Thứ ba" />
+  <object key="wednesday" value="Thứ tư" />
+  <object key="thursday" value="Thứ năm" />
+  <object key="friday" value="Thứ sáu" />
+  <object key="saturday" value="Thứ bảy" />
+  <object key="dayOfWeekSCH02" value="Ngày trong tuần" />
+  <object key="morningStartHourSCH02" value="Bắt đầu buổi sáng" />
+  <object key="morningEndHourSCH02" value="Hết buổi sáng" />
+  <object key="afternoonStartHourSCH02" value="Bắt đầu buổi chiều" />
+  <object key="afternoonEndHourSCH02" value="Hết buổi chiều" />
+  <object key="start time must be less than end time" value="Thời gian bắt đầu phải nhỏ hơn thời gian kết thúc." />
+  <object key="working days" value="Ngày làm việc" />
 
-  <object key="scheduled activity" value="Scheduled Activity" />
+  <object key="scheduled activity" value="Hoạt động đã đặt lịch" />
   <object key="companyCodeSys01SCH06" value="ID công ty" />
-  <object key="activityPaleSCH06" value="Place" />
-  <object key="managerName_1SCH06" value="Manager First Name" />
-  <object key="managerName_2SCH06" value="Manager Last Name" />
-  <object key="subjectName_1SCH06" value="Commitee First Name" />
-  <object key="subjectName_2SCH06" value="Commitee Last Name" />
-  <object key="activityCodeSal09SCH06" value="Sale Act.Code" />
-  <object key="activityDescriptionSCH06" value="Sale Activity Description" />
+  <object key="activityPaleSCH06" value="Địa điểm" />
+  <object key="managerName_1SCH06" value="Tên quản lý" />
+  <object key="managerName_2SCH06" value="Họ quản lý" />
+  <object key="subjectName_1SCH06" value="Tên ủy ban" />
+  <object key="subjectName_2SCH06" value="Họ ủy ban" />
+  <object key="activityCodeSal09SCH06" value="Mã hoạt động bán hàng" />
+  <object key="activityDescriptionSCH06" value="Mô tả hoạt động bán hàng" />
 
   <object key="call-out types" value="Call-Out Types" />
   <object key="call-out type" value="Call-Out Type" />
@@ -1120,296 +1120,296 @@
   <object key="callOutCodeSCH10" value="Call-Out Code" />
   <object key="companyCodeSys01SCH10" value="ID công ty" />
   <object key="call-out detail" value="Call-Out Detail" />
-  <object key="rateSCH10" value="Rate" />
+  <object key="rateSCH10" value="Tỷ lệ" />
   <object key="machineries" value="Machineries" />
   <object key="call-out resources" value="Call-Out Resources" />
-  <object key="taskCodeReg07SCH12" value="Duty Code" />
-  <object key="machineryCodePro03SCH13" value="Machinery Code" />
+  <object key="taskCodeReg07SCH12" value="Mã công việc" />
+  <object key="machineryCodePro03SCH13" value="Mã máy" />
   <object key="itemCodeItm01SCH14" value="Mã hàng hóa" />
 
   <object key="call-out requests" value="Call-Out Requests" />
   <object key="call-out request detail" value="Call-Out Request Detail" />
-  <object key="progressiveSCH03" value="Req.Nr." />
-  <object key="requestYearSCH03" value="Req.Year" />
+  <object key="progressiveSCH03" value="Số tham khảo" />
+  <object key="requestYearSCH03" value="Năm" />
   <object key="callOutDescriptionSYS10" value="Call-Out Description" />
   <object key="callOutCodeSch10SCH03" value="Call-Out Code" />
-  <object key="prioritySCH03" value="Priority" />
-  <object key="callOutStateSCH03" value="Req. State" />
-  <object key="requestDateSCH03" value="Request Date" />
-  <object key="usernameSys03SCH03" value="Request User" />
-  <object key="descriptionSCH03" value="Request Description" />
-  <object key="companyCodeSys01SCH03" value="Company" />
-  <object key="subject identification" value="Subject Identification" />
-  <object key="retrieve organization type subjects" value="Retrieve organization type subjects" />
-  <object key="retrieve people type subjects" value="Retrieve people type subjects" />
-  <object key="organizations" value="Organizations" />
-  <object key="people" value="People" />
-  <object key="reload non allowed" value="Reload non allowed" />
-  <object key="subject type" value="Subject Type" />
+  <object key="prioritySCH03" value="Ưu tiên" />
+  <object key="callOutStateSCH03" value="Yêu cầu trạng thái" />
+  <object key="requestDateSCH03" value="Yêu cầu ngày" />
+  <object key="usernameSys03SCH03" value="Yêu cầu người dùng" />
+  <object key="descriptionSCH03" value="Mô tả yêu cầu" />
+  <object key="companyCodeSys01SCH03" value="Công ty" />
+  <object key="subject identification" value="Xác nhận đối tượng" />
+  <object key="retrieve organization type subjects" value="Lấy về tổ chức kiểu đối tượng" />
+  <object key="retrieve people type subjects" value="Lấy về con người kiểu đối tượng" />
+  <object key="organizations" value="Tổ chức" />
+  <object key="people" value="Con người" />
+  <object key="reload non allowed" value="Không yêu cầu tải lại" />
+  <object key="subject type" value="Kiểu đối tượng" />
   <object key="call-out number" value="Call-Out Number" />
-  <object key="highest" value="Highest" />
-  <object key="high" value="High" />
-  <object key="normal" value="Normal" />
-  <object key="low" value="Low" />
-  <object key="trivial" value="Trivial" />
+  <object key="highest" value="Cao nhất" />
+  <object key="high" value="Cao" />
+  <object key="normal" value="Bình thường" />
+  <object key="low" value="Thấp" />
+  <object key="trivial" value="Không quan trọng" />
   <object key="callOutType" value="Call-Out Type" />
-  <object key="noteSCH03" value="Note" />
-  <object key="invoiced" value="Invoiced" />
+  <object key="noteSCH03" value="Ghi chú" />
+  <object key="invoiced" value="Hóa đơn" />
 
-  <object key="activityTypeSCH06" value="Act.Type" />
-  <object key="generic task" value="Generic Task" />
-  <object key="appointment" value="Appointment" />
-  <object key="send email" value="Send Email" />
-  <object key="send fax" value="Send Fax" />
-  <object key="meeting" value="Meeting" />
-  <object key="telephone call" value="Telephone Call" />
-  <object key="telephone" value="Phone Nr." />
+  <object key="activityTypeSCH06" value="Kiểu hoạt động" />
+  <object key="generic task" value="Công việc" />
+  <object key="appointment" value="Cuộc hẹn" />
+  <object key="send email" value="Gửi mail" />
+  <object key="send fax" value="Gửi fax" />
+  <object key="meeting" value="Họp hành" />
+  <object key="telephone call" value="Gọi điện thoại" />
+  <object key="telephone" value="Số điện thoại" />
   <object key="call-out" value="Call-Out" />
-  <object key="absence" value="Absence" />
-  <object key="holiday" value="Holiday" />
-  <object key="illness" value="Illness" />
-  <object key="activityStateSCH06" value="Act.State" />
-  <object key="estimatedEndDateSCH06" value="Estimated End Date" />
-  <object key="expirationDateSCH06" value="Due Date" />
-  <object key="estimatedDurationSCH06" value="Estim.Durat. [min]" />
-  <object key="prioritySCH06" value="Priority" />
-  <object key="completionPercSCH06" value="Completion %" />
-  <object key="activityPlaceSCH06" value="Activity Place" />
-  <object key="noteSCH06" value="Note" />
-  <object key="noteSCH07" value="Note" />
+  <object key="absence" value="Vắng mặt" />
+  <object key="holiday" value="Nghỉ phép" />
+  <object key="illness" value="Ốm" />
+  <object key="activityStateSCH06" value="Trạng thái hoạt động" />
+  <object key="estimatedEndDateSCH06" value="Ngày kết thúc" />
+  <object key="expirationDateSCH06" value="Ngày gia hạn" />
+  <object key="estimatedDurationSCH06" value="Thời lượng [ít nhất]" />
+  <object key="prioritySCH06" value="Ưu tiên" />
+  <object key="completionPercSCH06" value="Hoàn thành %" />
+  <object key="activityPlaceSCH06" value="Địa điểm" />
+  <object key="noteSCH06" value="Ghi chú" />
+  <object key="noteSCH07" value="Ghi chú" />
   <object key="durationSCH07" value="Thời lượng [ngắn nhất]" />
-  <object key="startDateSCH07" value="Start Date" />
-  <object key="endDateSCH07" value="End Date" />
-  <object key="taskCodeReg07SCH07" value="Duty Code" />
-  <object key="employeeCodeSch01SCH07" value="Empl.Code" />
-  <object key="machineryDescription" value="Machinery Descr." />
-  <object key="noteSCH09" value="Note" />
+  <object key="startDateSCH07" value="Ngày bắt đầu" />
+  <object key="endDateSCH07" value="Ngày kết thúc" />
+  <object key="taskCodeReg07SCH07" value="Mã công việc" />
+  <object key="employeeCodeSch01SCH07" value="Mã người lao động" />
+  <object key="machineryDescription" value="Mô tả máy" />
+  <object key="noteSCH09" value="Ghi chú" />
   <object key="durationSCH09" value="Thời lượng [ngắn nhất]" />
-  <object key="startDateSCH09" value="Start Date" />
-  <object key="endDateSCH09" value="End Date" />
-  <object key="machineryCodePro03SCH09" value="Machin.Code" />
-  <object key="descriptionDOC14" value="Document Name" />
+  <object key="startDateSCH09" value="Ngày bắt đầu" />
+  <object key="endDateSCH09" value="Ngày kết thúc" />
+  <object key="machineryCodePro03SCH09" value="Mã máy" />
+  <object key="descriptionDOC14" value="Tên tài liệu" />
   <object key="itemCodeItm01SCH15" value="Mã hàng hóa" />
-  <object key="qtySCH15" value="Item Qty" />
-  <object key="scheduled resources" value="Scheduled Resources" />
+  <object key="qtySCH15" value="Số lượng hàng" />
+  <object key="scheduled resources" value="Nguồn lực" />
   <object key="progressiveDoc14SCH08" value="Sel." />
-  <object key="attached documents" value="Attached Documents" />
-  <object key="activity resources" value="Activity Resources" />
+  <object key="attached documents" value="Tài liệu đính kèm" />
+  <object key="activity resources" value="Nguồn lực hoạt động" />
 
   <object key="finiteCapacityPRO03" value="Finite Cap." />
   <object key="companyCodeSys01PRO03" value="ID công ty" />
-  <object key="machineryCodePRO03" value="Machin.Code" />
-  <object key="valuePRO03" value="Value" />
-  <object key="currencyCodeReg03PRO03" value="Curr.Code" />
+  <object key="machineryCodePRO03" value="Mã máy" />
+  <object key="valuePRO03" value="Giá trị" />
+  <object key="currencyCodeReg03PRO03" value="Mã tiền tệ" />
   <object key="durationPRO03" value="Thời lượng [ngắn nhất]" />
 
-  <object key="close activity" value="Close Activity" />
-  <object key="confirm activity closing?" value="Confirm activity closing?" />
-  <object key="activity closing" value="Activity  " />
+  <object key="close activity" value="Đóng hoạt động" />
+  <object key="confirm activity closing?" value="Xác nhận đóng hoạt động?" />
+  <object key="activity closing" value="Hoạt động  " />
   <object key="confirm call-out request closing?" value="Confirm call-out request closing?" />
   <object key="call-out request" value="Call-Out request" />
-  <object key="create invoice" value="Create invoice" />
-  <object key="invoice creation" value="Invoice creation" />
-  <object key="you must define the customer code" value="You must define the customer code" />
-  <object key="you must select a pricelist" value="You must select a pricelist" />
+  <object key="create invoice" value="Tạo hóa đơn" />
+  <object key="invoice creation" value="Tạo hóa đơn" />
+  <object key="you must define the customer code" value="Bạn phải xác định mã khách hàng" />
+  <object key="you must select a pricelist" value="Bạn phải chọn một danh sách giá cả" />
   <object key="invoice from call-out request nr." value="Invoice from call-out request nr." />
-  <object key="you must select a payment" value="You must select a payment" />
-  <object key="no price defined for the scheduled item" value="No price defined for the scheduled item" />
-  <object key="no task defined for the scheduled employee" value="No task defined for the scheduled employee" />
-  <object key="you must select all account codes" value="You must select all account codes" />
-  <object key="no sale activity code linked to the task" value="No sale activity code linked to the task" />
-  <object key="you must select a warehouse" value="You must select a warehouse" />
-  <object key="view invoice" value="View Invoice" />
+  <object key="you must select a payment" value="Bạn phải chọn 1 kiểu thanh toán" />
+  <object key="no price defined for the scheduled item" value="Không có hóa cho loại hàng hóa này" />
+  <object key="no task defined for the scheduled employee" value="Không có việc cho nhân viên này" />
+  <object key="you must select all account codes" value="Bạn phải chọn tất cả mã tài khoản" />
+  <object key="no sale activity code linked to the task" value="Không có mã hoạt động mua hàng kết nối đến công việc" />
+  <object key="you must select a warehouse" value="Bạn phải chọn 1 kho hàng" />
+  <object key="view invoice" value="Xem hóa đơn" />
 
-  <object key="day appointments" value="Agenda" />
-  <object key="no employee code linked to the current user" value="No employee code linked to the current user" />
-  <object key="appointments cannot be viewed" value="Appointments cannot be viewed" />
-  <object key="absences" value="Absences" />
-  <object key="find next appointment" value="Find next appointment" />
-  <object key="find appointment" value="Find Appointment" />
-  <object key="no appointment found" value="No appointment found" />
-  <object key="gantt diagram" value="Gantt Diagram" />
-  <object key="employees having task" value="employees having duty" />
+  <object key="day appointments" value="Nhật ký" />
+  <object key="no employee code linked to the current user" value="Không có mã nhân viên kết nối với người dùng hiện tại" />
+  <object key="appointments cannot be viewed" value="Cuộc hẹn không thể xem được" />
+  <object key="absences" value="Vắng mặt" />
+  <object key="find next appointment" value="Tìm cuộc hẹn tiếp theo" />
+  <object key="find appointment" value="Tìm cuộc hẹn" />
+  <object key="no appointment found" value="Không tìm thấy cuộc hẹn nào" />
+  <object key="gantt diagram" value="Biểu đồ Gantt" />
+  <object key="employees having task" value="Nhân viên có việc" />
   <object key="gantt" value="Gantt" />
-  <object key="reload data" value="Reload data" />
-  <object key="you must specify both dates" value="You must specify both dates" />
-  <object key="fill in the whole day" value="Fill in the whole day" />
-  <object key="remove all day appointments" value="Remove all day appointments" />
-  <object key="no working hours defined for this day" value="No working hours defined for this day" />
-  <object key="you must specify employee code" value="You must specify employee code" />
+  <object key="reload data" value="Tải lại dữ liệu" />
+  <object key="you must specify both dates" value="Bạn phải xác định cả 2 ngày" />
+  <object key="fill in the whole day" value="Điền vào cả ngày" />
+  <object key="remove all day appointments" value="Xóa tất cả cuộc hẹn" />
+  <object key="no working hours defined for this day" value="Không có giờ làm việc cho ngày này" />
+  <object key="you must specify employee code" value="Bạn phải xác định mã nhân viên" />
 
-  <object key="document types" value="Document Hierarchies" />
-  <object key="document type" value="Document Type" />
+  <object key="document types" value="Hệ thống tài liệu" />
+  <object key="document type" value="Kiểu tài liệu" />
   <object key="companyCodeSys01DOC16" value="ID công ty" />
   <object key="companyCodeSys01DOC14" value="ID công ty" />
-  <object key="document detail" value="Document Detail" />
-  <object key="document links" value="Document Links" />
-  <object key="document versions" value="Document Versions" />
-  <object key="document properties" value="Document Properties" />
-  <object key="documentType" value="Document Type" />
-  <object key="you must attach a file" value="You must attach a file" />
-  <object key="you are not allowed to delete all document versions" value="You are not allowed to delete all document versions" />
-  <object key="you are not allowed to delete all document links" value="You are not allowed to delete all document links" />
-  <object key="you must select a tree level before inserting new document" value="You must select a tree level before inserting new document" />
-  <object key="uploaded document" value="Uploaded document" />
-  <object key="progressiveHie01DOC17" value="Lev." />
-  <object key="createUsernameDOC15" value="Upl.Doc. Username" />
-  <object key="createDateDOC15" value="Creation Date" />
-  <object key="versionDOC15" value="Doc.Version" />
-  <object key="double click to open the document" value="Double click to open the document" />
-  <object key="you must select a tree level before inserting new property" value="You must select a tree level before inserting new property" />
+  <object key="document detail" value="Chi tiết tài liệu" />
+  <object key="document links" value="Liên kết tài liệu" />
+  <object key="document versions" value="Phiên bản của tài liệu" />
+  <object key="document properties" value="Thuộc tính tài liệu" />
+  <object key="documentType" value="Kiểu tài liệu" />
+  <object key="you must attach a file" value="Bạn phải đính kèm 1 tài liệu" />
+  <object key="you are not allowed to delete all document versions" value="Bạn không được phép xóa tất cả các phiên bản" />
+  <object key="you are not allowed to delete all document links" value="Bạn không được phép xóa tất cả các kết nối" />
+  <object key="you must select a tree level before inserting new document" value="Bạn phải chọn 1 level trước khi chèn thêm tài liệu mới" />
+  <object key="uploaded document" value="Tải dữ liệu lên" />
+  <object key="progressiveHie01DOC17" value="Mức" />
+  <object key="createUsernameDOC15" value="Người dùng" />
+  <object key="createDateDOC15" value="Tạo ngày" />
+  <object key="versionDOC15" value="Phiên bản tài liệu" />
+  <object key="double click to open the document" value="Nháy đúp để mở tài liệu" />
+  <object key="you must select a tree level before inserting new property" value="Bạn phải chọn level trước khi chèn thêm thuộc tính mới" />
   <object key="companyCodeSys01DOC21" value="ID công ty" />
-  <object key="propertyTypeDOC21" value="Type" />
-  <object key="properties" value="Properties" />
-  <object key="documents filter" value="Documents Filter" />
-  <object key="docsPanel" value="Attached Documents" />
+  <object key="propertyTypeDOC21" value="Kiểu" />
+  <object key="properties" value="Thuộc tính" />
+  <object key="documents filter" value="Lọc tài liệu" />
+  <object key="docsPanel" value="Tài liệu đính kèm" />
   <object key="progressiveDoc14ITM05" value="..." />
 
-  <object key="products" value="Products" />
-  <object key="billofmaterial" value="Bill of materials" />
-  <object key="product detail" value="Product detail" />
-  <object key="components" value="Components" />
-  <object key="manufactures" value="Manufactures" />
-  <object key="versionITM01" value="Version" />
-  <object key="revisionITM01" value="Revision" />
-  <object key="versionITM03" value="Version" />
-  <object key="revisionITM03" value="Revision" />
-  <object key="startDateITM01" value="Start Valid.Date" />
-  <object key="startDateITM03" value="Start Valid.Date" />
-  <object key="endDateITM03" value="End Valid.Date" />
+  <object key="products" value="Sản phẩm" />
+  <object key="billofmaterial" value="Hóa đơn nguyên vật liệu" />
+  <object key="product detail" value="Chi tiết sản phẩm" />
+  <object key="components" value="Thành phần" />
+  <object key="manufactures" value="Nhà sản xuất" />
+  <object key="versionITM01" value="Phiên bản" />
+  <object key="revisionITM01" value="Xem lại" />
+  <object key="versionITM03" value="Phiên bản" />
+  <object key="revisionITM03" value="Xem lại" />
+  <object key="startDateITM01" value="Ngày bắt đầu" />
+  <object key="startDateITM03" value="Ngày bắt đầu" />
+  <object key="endDateITM03" value="Ngày kết thúc" />
   <object key="itemType" value="Loại hàng hóa" />
-  <object key="manufactureCodePro01ITM01" value="Manufacture Code" />
+  <object key="manufactureCodePro01ITM01" value="Mã sản xuất" />
   <object key="itemCodeItm01ITM03" value="Mã hàng hóa" />
-  <object key="sequenceITM03" value="Seq." />
+  <object key="sequenceITM03" value="Trình tự" />
   <object key="qtyITM03" value="Số lượng" />
-  <object key="itemDescription" value="Item Description" />
-  <object key="itemDescription2" value="Alternative Item Descr." />
-  <object key="substItemCodeItm01ITM03" value="Alternative Item" />
-  <object key="production cycles" value="Production cycles" />
-  <object key="you must define either a machinery or a duty" value="You must define either a machinery or a duty." />
-  <object key="internal" value="Internal" />
-  <object key="external" value="External" />
-  <object key="you must define the resources number" value="You must define the resources number." />
+  <object key="itemDescription" value="Mô tả hàng hóa" />
+  <object key="itemDescription2" value="Mô tả hàng hóa thay thế" />
+  <object key="substItemCodeItm01ITM03" value="Hàng hóa thay thế" />
+  <object key="production cycles" value="Vòng đời sản phẩm" />
+  <object key="you must define either a machinery or a duty" value="Bạn phải xác định hoặc máy móc hoặc trực ban." />
+  <object key="internal" value="Bên trong" />
+  <object key="external" value="Bên ngoài" />
+  <object key="you must define the resources number" value="Bạn phải xác định lượng tài nguyên." />
   <object key="qtyPRO02" value="Res.Nr." />
-  <object key="valuePRO02" value="Cost" />
-  <object key="durationPRO02" value="Duration" />
-  <object key="phaseNumberPRO02" value="Seq." />
-  <object key="manufactureTypePRO02" value="Op.Type" />
-  <object key="completionPercPRO02" value="% complet." />
-  <object key="notePRO02" value="Note" />
-  <object key="taskCodeReg07PRO02" value="Duty Code" />
-  <object key="taskDescriptionSYS10" value="Duty Description" />
-  <object key="machineryDescriptionSYS10" value="Mach. Description" />
-  <object key="machineryCodePro03PRO02" value="Mach.Code" />
-  <object key="companyCodeSys01PRO01" value="Company" />
-  <object key="description2" value="Alternative Op." />
-  <object key="operations" value="Operations" />
-  <object key="qtyPRO04" value="Res.Nr." />
-  <object key="valuePRO04" value="Cost" />
-  <object key="durationPRO04" value="Duration" />
-  <object key="machineryCodePro03PRO04" value="Mach.Code" />
-  <object key="taskCodeReg07PRO04" value="Duty Code" />
-  <object key="notePRO04" value="Note" />
-  <object key="companyCodeSys01PRO04" value="Company" />
-  <object key="operationCodePro04PRO02" value="Op.Code" />
-  <object key="operationCodePRO04" value="Op.Code" />
-  <object key="currencyCodeReg03PRO01" value="Curr.Code" />
-  <object key="manufactureCodePRO01" value="Code" />
-  <object key="completion % must be between 0 and 100" value="Completion % must be between 0 and 100" />
-  <object key="specified item already defined as product" value="Specified item already defined as product" />
+  <object key="valuePRO02" value="Giá cả" />
+  <object key="durationPRO02" value="Thời lượng" />
+  <object key="phaseNumberPRO02" value="Tuần tự" />
+  <object key="manufactureTypePRO02" value="Kiểu nhà sản xuất" />
+  <object key="completionPercPRO02" value="% hoàn thành" />
+  <object key="notePRO02" value="Ghi chú" />
+  <object key="taskCodeReg07PRO02" value="Mã công việc" />
+  <object key="taskDescriptionSYS10" value="Mô tả công việc" />
+  <object key="machineryDescriptionSYS10" value="Mô tả máy móc" />
+  <object key="machineryCodePro03PRO02" value="Mã máy móc" />
+  <object key="companyCodeSys01PRO01" value="Công ty" />
+  <object key="description2" value="Hoạt động thay thế" />
+  <object key="operations" value="Hoạt động" />
+  <object key="qtyPRO04" value="Số lượng" />
+  <object key="valuePRO04" value="Giá cả" />
+  <object key="durationPRO04" value="Thời lượng" />
+  <object key="machineryCodePro03PRO04" value="Mã máy móc" />
+  <object key="taskCodeReg07PRO04" value="Mã công việc" />
+  <object key="notePRO04" value="Ghi chú" />
+  <object key="companyCodeSys01PRO04" value="Công ty" />
+  <object key="operationCodePro04PRO02" value="Mã thực thi" />
+  <object key="operationCodePRO04" value="Mã thực thi" />
+  <object key="currencyCodeReg03PRO01" value="Mã tiền tệ" />
+  <object key="manufactureCodePRO01" value="Mã" />
+  <object key="completion % must be between 0 and 100" value="% hoàn thành phải trong khoảng 0 đến 100" />
+  <object key="specified item already defined as product" value="Hàng đã được xác định như 1 sản phẩm" />
   <object key="implosionPanel" value="Product Implosion" />
-  <object key="explosionPanel" value="Product Explosion" />
-  <object key="productInfo" value="Product Info" />
-  <object key="totalCosts" value="Tot.Costs" />
-  <object key="totalPrices" value="Tot.Prices" />
-  <object key="parentItemCodeItm01ITM03" value="Products" />
-  <object key="supplierDescription" value="Supplier" />
+  <object key="explosionPanel" value="Bùng nổ sản phẩm" />
+  <object key="productInfo" value="Thông tin sản phẩm" />
+  <object key="totalCosts" value="Tổng giá" />
+  <object key="totalPrices" value="Tổng giá" />
+  <object key="parentItemCodeItm01ITM03" value="Sản phẩm" />
+  <object key="supplierDescription" value="Nhà cung cấp" />
   <object key="pricelistCodePur03PUR04" value="Mã bảng giá" />
   <object key="purchase item prices" value="Purchase item prices" />
-  <object key="the selected item requires serial number definition: this kind of item is not allowed" value="The selected item requires serial number definition: this kind of item is not allowed" />
-  <object key="a product cannot require serial number definition" value="A product cannot require serial number definition" />
+  <object key="the selected item requires serial number definition: this kind of item is not allowed" value="Hàng này yêu cầu số seri: loại hàng hóa này không được phép" />
+  <object key="a product cannot require serial number definition" value="Sản phẩm không yêu cầu số seri" />
 
-  <object key="component is not available in the specified warehouse" value="component is not available in the specified warehouse" />
-  <object key="found" value="Found" />
-  <object key="required" value="required" />
-  <object key="unload items from production order" value="Unload components from production order" />
-  <object key="load items from production order" value="Load products from production order" />
-  <object key="production orders" value="Production orders" />
-  <object key="production order" value="Production order" />
-  <object key="descriptionWar01DOC22" value="Components Warehouse" />
-  <object key="description2War01DOC22" value="Products Warehouse" />
-  <object key="warehouseCodeWar01DOC22" value="Comp.War.Code" />
-  <object key="warehouseCode2War01DOC22" value="Prod.War.Code" />
-  <object key="docYearDOC22" value="Year" />
-  <object key="docSequenceDOC22" value="Order.Nr" />
-  <object key="companyCodeSys01DOC22" value="Company" />
-  <object key="docDateDOC22" value="Order Date" />
-  <object key="docStateDOC22" value="Order State" />
-  <object key="confirm production order?" value="Confirm production order?" />
-  <object key="availableQty" value="Avail.Qty" />
-  <object key="qtyDOC24" value="Required Qty" />
+  <object key="component is not available in the specified warehouse" value="Thành phần này không có sẵn trong kho hàng" />
+  <object key="found" value="Đã thấy" />
+  <object key="required" value="Yêu cầu" />
+  <object key="unload items from production order" value="Dỡ hàng từ hóa đơn sản phẩm" />
+  <object key="load items from production order" value="Chất hàng hóa từ hóa đơn sản phẩm" />
+  <object key="production orders" value="Sản phẩm đặt hàng" />
+  <object key="production order" value="Sản phẩm đặt hàng" />
+  <object key="descriptionWar01DOC22" value="Kho hàng thành phẩm" />
+  <object key="description2War01DOC22" value="Kho hàng sản phẩm" />
+  <object key="warehouseCodeWar01DOC22" value="Mã kho hàng thành phẩm" />
+  <object key="warehouseCode2War01DOC22" value="Mã kho hàng sản phẩm" />
+  <object key="docYearDOC22" value="Năm" />
+  <object key="docSequenceDOC22" value="Số đặt hàng" />
+  <object key="companyCodeSys01DOC22" value="Công ty" />
+  <object key="docDateDOC22" value="Ngày đặt hàng" />
+  <object key="docStateDOC22" value="Trạng thái đặt hàng" />
+  <object key="confirm production order?" value="Xác nhận đặt sản phẩm?" />
+  <object key="availableQty" value="Số lượng có sẵn" />
+  <object key="qtyDOC24" value="Yêu cầu số lượng" />
   <object key="qtyDOC23" value="Số lượng" />
-  <object key="itemCodeItm01DOC23" value="Product Code" />
-  <object key="itemCodeItm01DOC24" value="Component Code" />
-  <object key="progressiveHie01DOC23" value="Warehouse Bin" />
+  <object key="itemCodeItm01DOC23" value="Mã sản phẩm" />
+  <object key="itemCodeItm01DOC24" value="Mã thành phẩm" />
+  <object key="progressiveHie01DOC23" value="Kho hàng" />
   <object key="progressiveHie02DOC23" value="Loại hàng hóa" />
-  <object key="headerFormPanel" value="Production Order" />
-  <object key="order closing" value="Order closing" />
-  <object key="close production order?" value="Close production order?" />
-  <object key="print bill of materials" value="Print bill of materials" />
-  <object key="alternativeComponents" value="Alternative Items" />
-  <object key="you cannot define this item as a product because there are alternative components defined." value="You cannot define this item as a product because there are alternative components defined." />
-  <object key="itemCodeItm01ITM04" value="Alt.Item Code" />
-  <object key="you cannot set the current item as alternative component" value="You cannot set the current item as alternative component." />
-  <object key="you cannot set the current item as a product, because it has alternative components" value="You cannot set the current item as a product, because it has alternative components." />
+  <object key="headerFormPanel" value="Sản phẩm đặt hàng" />
+  <object key="order closing" value="Đóng đặt hàng" />
+  <object key="close production order?" value="Đóng đặt sản phẩm?" />
+  <object key="print bill of materials" value="In hóa đơn vật liệu" />
+  <object key="alternativeComponents" value="Sản phẩm thay thế" />
+  <object key="you cannot define this item as a product because there are alternative components defined." value="Đây không phải là 1 sản phẩm." />
+  <object key="itemCodeItm01ITM04" value="Mã sản phẩm thay thế" />
+  <object key="you cannot set the current item as alternative component" value="Không thể thiết lập hàng như 1 thành phẩm." />
+  <object key="you cannot set the current item as a product, because it has alternative components" value="Không thể thiết lập hàng như 1 sản phẩm." />
 
-  <object key="application functions" value="Application Functions" />
-  <object key="new description:" value="New description:" />
-  <object key="change description" value="Change description" />
-  <object key="which operation?" value="Which operation?" />
-  <object key="node dropped" value="Node dropped" />
-  <object key="move node" value="Move node" />
-  <object key="copy node" value="Copy node" />
+  <object key="application functions" value="Chức năng hệ thống" />
+  <object key="new description:" value="Mô tả mới:" />
+  <object key="change description" value="Thay đổi: " />
+  <object key="which operation?" value="Hoạt động nào?" />
+  <object key="node dropped" value="Xóa node" />
+  <object key="move node" value="Chuyển node" />
+  <object key="copy node" value="Sao chép node" />
 
-  <object key="employees hierarchies" value="Employees Hierarchies" />
+  <object key="employees hierarchies" value="Phân cấp nhân viên" />
 
-  <object key="sql" value="SQL Shell" />
-  <object key="entities" value="Entities list" />
-  <object key="data" value="Data" />
-  <object key="structure" value="Structure" />
-  <object key="tables" value="Tables" />
+  <object key="sql" value="Lệnh SQL" />
+  <object key="entities" value="Danh sách đối tượng" />
+  <object key="data" value="Dữ liệu" />
+  <object key="structure" value="Cấu trúc" />
+  <object key="tables" value="Bảng" />
   <object key="views" value="Views" />
-  <object key="synonyms" value="Synonyms" />
-  <object key="sql tool" value="SQL Tool" />
-  <object key="you must define a sql statement!" value="You must define a SQL statement!" />
-  <object key="rows affected." value="rows affected." />
+  <object key="synonyms" value="Đồng nghĩa" />
+  <object key="sql tool" value="Công cụ SQL" />
+  <object key="you must define a sql statement!" value="Xác định câu lệnh SQL!" />
+  <object key="rows affected." value="dòng được thực thi." />
   <object key="select has not been correctly parsed" value="Select has not been correctly parsed" />
   <object key="no pk defined: delete not allowed" value="No primary key defined: delete not allowed" />
   <object key="no pk defined: update not allowed" value="No primary key defined: update not allowed" />
-  <object key="columnNameWithoutTable" value="Column Name" />
-  <object key="columnType" value="Column Type" />
-  <object key="primaryKey" value="PK" />
-  <object key="columnRequired" value="Req." />
+  <object key="columnNameWithoutTable" value="Tên cột" />
+  <object key="columnType" value="Kiểu cột" />
+  <object key="primaryKey" value="Khóa chính" />
+  <object key="columnRequired" value="Yêu cầu" />
 
-  <object key="custom functions" value="Custom Functions" />
-  <object key="functionCodeSYS06" value="Function Code" />
-  <object key="functionCodeSys06SYS16" value="Function Code" />
-  <object key="custom function" value="Custom Function" />
-  <object key="useCompanyCodeSYS06" value="Access at company level" />
-  <object key="column properties" value="Column properties" />
-  <object key="tables to save" value="Tables to save" />
-  <object key="columnNameSYS22" value="Col.Name" />
-  <object key="columnTypeSYS22" value="Type" />
-  <object key="defaultValueTextSYS22" value="Def.Text" />
-  <object key="defaultValueNumSYS22" value="Def.Num." />
-  <object key="defaultValueDateSYS22" value="Def.Date" />
-  <object key="columnVisibleSYS22" value="Vis." />
-  <object key="autoLoadDataSYS16" value="Autoload Data" />
+  <object key="custom functions" value="Chức năng" />
+  <object key="functionCodeSYS06" value="Mã chức năng" />
+  <object key="functionCodeSys06SYS16" value="Mã chức năng" />
+  <object key="custom function" value="Chức năng" />
+  <object key="useCompanyCodeSYS06" value="Truy cập mức công ty" />
+  <object key="column properties" value="Tính chất cột" />
+  <object key="tables to save" value="Lưu bảng" />
+  <object key="columnNameSYS22" value="Tên cột" />
+  <object key="columnTypeSYS22" value="Kiểu" />
+  <object key="defaultValueTextSYS22" value="Kiểu chữ" />
+  <object key="defaultValueNumSYS22" value="Kiểu số" />
+  <object key="defaultValueDateSYS22" value="Kiểu ngày tháng" />
+  <object key="columnVisibleSYS22" value="Hiển thị" />
+  <object key="autoLoadDataSYS16" value="Tự động tải dữ liệu" />
   <object key="select" value="SQL" />
-  <object key="enumeration" value="Enumeration" />
-  <object key="progressive" value="Progressive" />
-  <object key="constraintValuesSYS22" value="Enumeration" />
-  <object key="show data" value="Show Data" />
+  <object key="enumeration" value="Minh bạch" />
+  <object key="progressive" value="Cấp tiến" />
+  <object key="constraintValuesSYS22" value="Minh bạch" />
+  <object key="show data" value="Hiện dữ liệu" />
   <object key="isParamSYS22" value="In Where" />
   <object key="isParamRequiredSYS22" value="Req.in Where" />
   <object key="filter conditions" value="Filter conditions" />
@@ -1423,103 +1423,103 @@
   <object key="variant" value="Variant" />
   <object key="variants" value="Variants" />
   <object key="codeOrder" value="Order" />
-  <object key="filenameDOC14" value="File name" />
+  <object key="filenameDOC14" value="Tên tài liệu" />
   <object key="barcode" value="Barcode" />
   <object key="barcodes" value="Barcodes" />
-  <object key="serialNumbers" value="Serial numbers" />
-  <object key="subtotal" value="Sub Total" />
-  <object key="discount" value="Discount" />
-  <object key="payed" value="Payed" />
-  <object key="discount on total value" value="Discount (on total)" />
-  <object key="change" value="Change" />
+  <object key="serialNumbers" value="Số seri" />
+  <object key="subtotal" value="Tổng số" />
+  <object key="discount" value="Giảm giá" />
+  <object key="payed" value="Đã thanh toán" />
+  <object key="discount on total value" value="Giảm giá (tổng)" />
+  <object key="change" value="Thay đổi" />
   <object key="enter" value="Enter" />
-  <object key="cancel" value="Canc." />
-  <object key="company selection" value="Company selection" />
-  <object key="you need to specifify the default customer for retail sale" value="You need to specifify the default customer for retail sale" />
-  <object key="you need to specifify the default warehouse for retail sale" value="You need to specifify the default warehouse for retail sale" />
-  <object key="ESC back" value="ESC Back" />
-  <object key="ESC back tooltip" value="Undo current operation" />
-  <object key="1 remove" value="1 Remove" />
-  <object key="1 remove tooltip" value="Remove selected row" />
-  <object key="2 qty" value="2 Qty" />
-  <object key="2 qty tooltip" value="Set item quantity" />
-  <object key="3 discount" value="3 Row discount" />
-  <object key="3 discount tooltip" value="Set discount for current item" />
-  <object key="4 customer" value="4 Customer" />
-  <object key="4 customer tooltip" value="Set customer settings" />
-  <object key="5 start" value="5 Start sale" />
-  <object key="5 start tooltip" value="Start new retail sale" />
-  <object key="6 close" value="6 Close sale" />
-  <object key="6 close tooltip" value="Close current retail sale" />
-  <object key="7 exit" value="7 Exit" />
-  <object key="7 exit tooltip" value="Exit from current window" />
-  <object key="are you sure to quit" value="Are you sure to quit window?" />
-  <object key="quit window" value="Quit window" />
-  <object key="point of sale" value="Point of sale" />
-  <object key="barcodesPanel" value="Bar code" />
-  <object key="discountValue" value="Discount" />
-  <object key="confirm sale closing" value="Confirm sale closing?" />
-  <object key="sale closing" value="Sale closing" />
-  <object key="customers that have bought these items also bought" value="Customers that have bought these items also bought" />
-  <object key="avg. purchase cost" value="Avg. purchase cost" />
-  <object key="last purchase cost" value="Last purchase cost" />
-  <object key="last purchase date" value="Last purchase date" />
-  <object key="order tracking" value="Order tracking" />
-  <object key="docSequence" value="Doc.Nr." />
-  <object key="customerSupplierCode" value="C/S Code" />
-  <object key="docTypeDescr" value="Doc. Type" />
-  <object key="barcode already assigned to another item" value="Barcode already assigned to another item" />
-  <object key="print barcode labels" value="Print barcode labels" />
+  <object key="cancel" value="Hủy" />
+  <object key="company selection" value="Chọn công ty" />
+  <object key="you need to specifify the default customer for retail sale" value="Xác định khách hàng cho việc bán lẻ" />
+  <object key="you need to specifify the default warehouse for retail sale" value="Xác định kho hàng cho việc bán lẻ" />
+  <object key="ESC back" value="Quay lại" />
+  <object key="ESC back tooltip" value="Quay lại" />
+  <object key="1 remove" value="1 Xóa" />
+  <object key="1 remove tooltip" value="Xóa dòng" />
+  <object key="2 qty" value="2 Số lượng" />
+  <object key="2 qty tooltip" value="Thiết lập số lượng" />
+  <object key="3 discount" value="3 Giảm giá" />
+  <object key="3 discount tooltip" value="Thiết lập giảm giá cho sản phẩm" />
+  <object key="4 customer" value="4 Khách hàng" />
+  <object key="4 customer tooltip" value="Thiết lập cài đặt khách hàng" />
+  <object key="5 start" value="5 Bán hàng" />
+  <object key="5 start tooltip" value="Bắt đầu bán lẻ" />
+  <object key="6 close" value="6 Đóng cửa hàng" />
+  <object key="6 close tooltip" value="Đóng cửa hàng bán lẻ" />
+  <object key="7 exit" value="7 Thoát" />
+  <object key="7 exit tooltip" value="Thoát khỏi cửa sổ này" />
+  <object key="are you sure to quit" value="Bạn có muốn thoát không?" />
+  <object key="quit window" value="Thoát" />
+  <object key="point of sale" value="Điểm mua hàng" />
+  <object key="barcodesPanel" value="Mã barcode" />
+  <object key="discountValue" value="Giảm giá" />
+  <object key="confirm sale closing" value="Xác nhận đóng cửa?" />
+  <object key="sale closing" value="Đóng cửa hàng" />
+  <object key="customers that have bought these items also bought" value="Hàng được mua bởi những khách hàng khác" />
+  <object key="avg. purchase cost" value="Giá trung bình" />
+  <object key="last purchase cost" value="Giá lần trước" />
+  <object key="last purchase date" value="Ngày mua hàng lần trước" />
+  <object key="order tracking" value="Theo dõi đơn hàng" />
+  <object key="docSequence" value="Số tài liệu" />
+  <object key="customerSupplierCode" value="Mã khách hàng/nhà cung cấp" />
+  <object key="docTypeDescr" value="Kiểu tài liệu" />
+  <object key="barcode already assigned to another item" value="Mã barcode đã được cung cấp cho sản phẩm khách" />
+  <object key="print barcode labels" value="In mã barcode" />
   <object key="qty" value="Số lượng" />
   <object key="set the same value when matching the same" value="Set the same value when matching the same" />
-  <object key="prices saved" value="Prices saved" />
-  <object key="it is not allowed to insert variants having different unit prices" value="It is not allowed to insert variants having different unit prices" />
-  <object key="supplierCustomerCodeDOC08" value="Customer/Supplier code" />
-  <object key="Error while validating data:" value="The following input controls are not valid:" />
-  <object key="Validation Error" value="Data not correct" />
-  <object key="pivot table for sales" value="Pivot table for sales" />
-  <object key="sellAmount" value="Amount" />
+  <object key="prices saved" value="Lưu giá cả" />
+  <object key="it is not allowed to insert variants having different unit prices" value="Không cho phép chèn biến số có giá khác nhau" />
+  <object key="supplierCustomerCodeDOC08" value="Mã khách hàng/nhà cung cấp" />
+  <object key="Error while validating data:" value="Lỗi khi duyệt dữ liệu:" />
+  <object key="Validation Error" value="Dữ liệu không đúng" />
+  <object key="pivot table for sales" value="Bảng không cho bán bàng" />
+  <object key="sellAmount" value="Số lượng" />
   <object key="sellQty" value="Số lượng" />
-  <object key="data fields" value="Data fields" />
-  <object key="row fields" value="Row fields" />
-  <object key="column fields" value="Column fields" />
-  <object key="warehouseCodeWar01DOC01" value="Warehouse" />
-  <object key="year" value="Year" />
-  <object key="quarter" value="Quarter" />
-  <object key="pivot table settings" value="Pivot table settings" />
-  <object key="field" value="Field" />
+  <object key="data fields" value="Trường dữ liệu" />
+  <object key="row fields" value="Dòng dữ liệu" />
+  <object key="column fields" value="Cột dữ liệu" />
+  <object key="warehouseCodeWar01DOC01" value="Kho hàng" />
+  <object key="year" value="Năm" />
+  <object key="quarter" value="Quý" />
+  <object key="pivot table settings" value="Thiết lập bảng" />
+  <object key="field" value="Trường" />
   <object key="checked" value="Checked" />
-  <object key="Error on reading data in input." value="Error on reading data in input." />
-  <object key="delivery request" value="Delivery request" />
-  <object key="delivery requests" value="Delivery requests" />
-  <object key="deliveryDateDOC01" value="Delivery Date" />
-  <object key="delivery request rows" value="Delivery request rows" />
-  <object key="delivreqnr" value="Deliv.Req.Nr." />
-  <object key="until date" value="Until date" />
+  <object key="Error on reading data in input." value="Lỗi đọc dữ liệu vào." />
+  <object key="delivery request" value="Yêu cầu giao hàng" />
+  <object key="delivery requests" value="Yêu cầu giao hàng" />
+  <object key="deliveryDateDOC01" value="Ngày giao hàng" />
+  <object key="delivery request rows" value="Yêu cầu giao hàng" />
+  <object key="delivreqnr" value="Số giao hàng" />
+  <object key="until date" value="Đến ngày" />
 
-  <object key="translations" value="Translations" />
-  <object key="item descriptions" value="Item descriptions" />
-  <object key="item additional descriptions" value="Item additional descriptions" />
-  <object key="vat descriptions" value="Vat descriptions" />
-  <object key="topic" value="Topic" />
-  <object key="hierarchies names" value="Hierarchies names" />
-  <object key="hierarchy levels names" value="Hierarchy levels names" />
-  <object key="variant names" value="Variant names" />
-  <object key="variant type" value="Variant type" />
-  <object key="task descriptions" value="Task descriptions" />
-  <object key="payment descriptions" value="Payment descriptions" />
-  <object key="payment type descriptions" value="Payment type descriptions" />
-  <object key="pricelist descriptions" value="Pricelist descriptions" />
-  <object key="discount descriptions" value="Discount descriptions" />
-  <object key="charge descriptions" value="Charge descriptions" />
-  <object key="activity descriptions" value="Activity descriptions" />
-  <object key="role descriptions" value="Role descriptions" />
-  <object key="function descriptions" value="Function descriptions" />
-  <object key="ledger descriptions" value="Ledger descriptions" />
-  <object key="account descriptions" value="Account descriptions" />
-  <object key="account motives" value="Account motives" />
+  <object key="translations" value="Dịch" />
+  <object key="item descriptions" value="Mô tả sản phẩm" />
+  <object key="item additional descriptions" value="Mô tả sản phẩm" />
+  <object key="vat descriptions" value="Mô tả VAT" />
+  <object key="topic" value="Đề tài" />
+  <object key="hierarchies names" value="Tên phân cấp" />
+  <object key="hierarchy levels names" value="Tên mức phân cấp" />
+  <object key="variant names" value="Tên biến số" />
+  <object key="variant type" value="Loại biến số" />
+  <object key="task descriptions" value="Mô tả công việc" />
+  <object key="payment descriptions" value="Mô tả thanh toán" />
+  <object key="payment type descriptions" value="Mô tả kiểu thanh toán" />
+  <object key="pricelist descriptions" value="Mô tả danh sách giá" />
+  <object key="discount descriptions" value="Mô tả giảm giá" />
+  <object key="charge descriptions" value="Mô tả phí" />
+  <object key="activity descriptions" value="Mô tả hoạt động" />
+  <object key="role descriptions" value="Mô tả vai trò" />
+  <object key="function descriptions" value="Mô tả chức năng" />
+  <object key="ledger descriptions" value="Mô tả sổ cái" />
+  <object key="account descriptions" value="Mô tả tài khoản" />
+  <object key="account motives" value="Chuyển tài khoản" />
 
-  <object key="connected users" value="Connected users" />
+  <object key="connected users" value="Kết nối người dùng" />
 
   <object key="min stock" value="Min stock" />
   <object key="items reorder" value="Items reorder" />
@@ -1607,8 +1607,8 @@
 
   <object key="stateWAR06" value="State" />
   <object key="descriptionWAR06" value="Inventary" />
-  <object key="startDateWAR06" value="Start Date" />
-  <object key="endDateWAR06" value="End Date" />
+  <object key="startDateWAR06" value="Ngày bắt đầu" />
+  <object key="endDateWAR06" value="Ngày kết thúc" />
   <object key="an inventory is in progress" value="An inventory calculation is in progress" />
   <object key="negdamaged" value="Inv. neg. correct. for damaged items Motive" />
   <object key="posdamaged" value="Inv. pos. correct. for damaged items Motive" />
@@ -1708,9 +1708,9 @@
 
 
 
-  <currencySymbol>$</currencySymbol>
-  <decimalSymbol>.</decimalSymbol>
-  <groupingSymbol>,</groupingSymbol>
+  <currencySymbol>vnd</currencySymbol>
+  <decimalSymbol>,</decimalSymbol>
+  <groupingSymbol>.</groupingSymbol>
   <dateFormat>YMD</dateFormat>
   <showCenturyInDateFormat>true</showCenturyInDateFormat>
   <dateFormatSeparator>/</dateFormatSeparator>
